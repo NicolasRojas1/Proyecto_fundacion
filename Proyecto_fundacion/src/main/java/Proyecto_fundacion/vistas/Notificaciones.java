@@ -95,7 +95,6 @@ public class Notificaciones extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1112, 900));
 
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         jScrollPane1.setViewportBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -167,7 +166,7 @@ public class Notificaciones extends javax.swing.JFrame {
                         .addComponent(InasisA, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(EstudianteAler, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
                         .addComponent(InasistenciaClaseDe)))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PanelAsistenciaLayout.setVerticalGroup(
             PanelAsistenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -251,7 +250,7 @@ public class Notificaciones extends javax.swing.JFrame {
         Hace5minPsico.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         Hace5minPsico.setText("Hace 5 min");
         PanelPsico.add(Hace5minPsico);
-        Hace5minPsico.setBounds(180, 10, 84, 21);
+        Hace5minPsico.setBounds(180, 10, 70, 22);
 
         EstudianteAlerPsico.setFont(new java.awt.Font("Roboto Medium", 0, 12)); // NOI18N
         EstudianteAlerPsico.addActionListener(new java.awt.event.ActionListener() {
@@ -260,19 +259,19 @@ public class Notificaciones extends javax.swing.JFrame {
             }
         });
         PanelPsico.add(EstudianteAlerPsico);
-        EstudianteAlerPsico.setBounds(7, 57, 270, 21);
+        EstudianteAlerPsico.setBounds(7, 57, 270, 22);
 
         NomEst.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         NomEst.setText("Estudiante ");
         PanelPsico.add(NomEst);
-        NomEst.setBounds(7, 36, 185, 15);
+        NomEst.setBounds(7, 36, 185, 16);
         PanelPsico.add(InasistenciaPsico);
-        InasistenciaPsico.setBounds(10, 110, 270, 22);
+        InasistenciaPsico.setBounds(10, 110, 270, 20);
 
         AlerPsico.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         AlerPsico.setText("Alerta - Psicologìa");
         PanelPsico.add(AlerPsico);
-        AlerPsico.setBounds(10, 10, 185, 17);
+        AlerPsico.setBounds(10, 10, 185, 19);
 
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
@@ -284,7 +283,7 @@ public class Notificaciones extends javax.swing.JFrame {
         GenerPor.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         GenerPor.setText("Generada Por:");
         PanelPsico.add(GenerPor);
-        GenerPor.setBounds(10, 90, 87, 15);
+        GenerPor.setBounds(10, 90, 81, 16);
 
         jPanel1.add(PanelPsico, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 150, 300, 230));
 
@@ -294,21 +293,21 @@ public class Notificaciones extends javax.swing.JFrame {
         Alerta.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         Alerta.setText("Alerta");
         jPanel2.add(Alerta);
-        Alerta.setBounds(20, 10, 43, 17);
+        Alerta.setBounds(20, 10, 41, 19);
 
         TipoDeAlerta.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         TipoDeAlerta.setText("Tipo de Alerta:");
         jPanel2.add(TipoDeAlerta);
-        TipoDeAlerta.setBounds(21, 45, 92, 15);
+        TipoDeAlerta.setBounds(21, 45, 81, 16);
 
         AsistenciaAlert.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Asistencia" }));
         jPanel2.add(AsistenciaAlert);
-        AsistenciaAlert.setBounds(125, 41, 160, 22);
+        AsistenciaAlert.setBounds(125, 41, 160, 20);
 
         GeneradaPor.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         GeneradaPor.setText("Generada Por:");
         jPanel2.add(GeneradaPor);
-        GeneradaPor.setBounds(20, 70, 87, 20);
+        GeneradaPor.setBounds(20, 70, 81, 20);
 
         jPanel2.add(AsistenciaAler1);
         AsistenciaAler1.setBounds(125, 69, 160, 22);
@@ -316,7 +315,7 @@ public class Notificaciones extends javax.swing.JFrame {
         AlertEstudian3.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         AlertEstudian3.setText("Estudiante");
         jPanel2.add(AlertEstudian3);
-        AlertEstudian3.setBounds(20, 100, 67, 15);
+        AlertEstudian3.setBounds(20, 100, 60, 16);
 
         jPanel2.add(EstudianteAlerta);
         EstudianteAlerta.setBounds(125, 97, 160, 22);
@@ -324,7 +323,7 @@ public class Notificaciones extends javax.swing.JFrame {
         Observacion.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         Observacion.setText("Observaciones");
         jPanel2.add(Observacion);
-        Observacion.setBounds(20, 140, 91, 15);
+        Observacion.setBounds(20, 140, 86, 16);
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -342,11 +341,11 @@ public class Notificaciones extends javax.swing.JFrame {
         TipoDeAlerta1.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         TipoDeAlerta1.setText("Tipo de Alerta:");
         jPanel3.add(TipoDeAlerta1);
-        TipoDeAlerta1.setBounds(17, 43, 92, 15);
+        TipoDeAlerta1.setBounds(17, 43, 81, 16);
 
         AsistenciaAlert3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Asistencia" }));
         jPanel3.add(AsistenciaAlert3);
-        AsistenciaAlert3.setBounds(121, 39, 220, 22);
+        AsistenciaAlert3.setBounds(121, 39, 220, 20);
 
         jPanel3.add(AsistenciaAlert2);
         AsistenciaAlert2.setBounds(121, 67, 220, 22);
@@ -354,7 +353,7 @@ public class Notificaciones extends javax.swing.JFrame {
         Alerta1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         Alerta1.setText("Alerta");
         jPanel3.add(Alerta1);
-        Alerta1.setBounds(17, 7, 43, 17);
+        Alerta1.setBounds(17, 7, 41, 19);
 
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
@@ -367,12 +366,12 @@ public class Notificaciones extends javax.swing.JFrame {
         GeneradaPor1.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         GeneradaPor1.setText("Generada Por:");
         jPanel3.add(GeneradaPor1);
-        GeneradaPor1.setBounds(20, 70, 87, 15);
+        GeneradaPor1.setBounds(20, 70, 81, 16);
 
         AlertEstudian2.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         AlertEstudian2.setText("Estudiante");
         jPanel3.add(AlertEstudian2);
-        AlertEstudian2.setBounds(20, 100, 67, 15);
+        AlertEstudian2.setBounds(20, 100, 60, 16);
 
         jPanel3.add(EstudianteAlerta1);
         EstudianteAlerta1.setBounds(120, 100, 220, 22);
@@ -380,7 +379,7 @@ public class Notificaciones extends javax.swing.JFrame {
         Observacion1.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         Observacion1.setText("Observaciones");
         jPanel3.add(Observacion1);
-        Observacion1.setBounds(20, 140, 91, 15);
+        Observacion1.setBounds(20, 140, 86, 16);
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, 360, 330));
 
@@ -390,7 +389,7 @@ public class Notificaciones extends javax.swing.JFrame {
         Hace5minPsico1.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         Hace5minPsico1.setText("Hace 5 min");
         PanelPsico2.add(Hace5minPsico1);
-        Hace5minPsico1.setBounds(193, 7, 84, 21);
+        Hace5minPsico1.setBounds(193, 7, 70, 22);
 
         EstudianteAlerPsico1.setFont(new java.awt.Font("Roboto Medium", 0, 12)); // NOI18N
         EstudianteAlerPsico1.addActionListener(new java.awt.event.ActionListener() {
@@ -399,19 +398,19 @@ public class Notificaciones extends javax.swing.JFrame {
             }
         });
         PanelPsico2.add(EstudianteAlerPsico1);
-        EstudianteAlerPsico1.setBounds(7, 57, 270, 21);
+        EstudianteAlerPsico1.setBounds(7, 57, 270, 22);
 
         jLabel10.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         jLabel10.setText("Estudiante ");
         PanelPsico2.add(jLabel10);
-        jLabel10.setBounds(7, 36, 185, 15);
+        jLabel10.setBounds(7, 36, 185, 16);
         PanelPsico2.add(InasistenciaPsico1);
-        InasistenciaPsico1.setBounds(7, 109, 270, 22);
+        InasistenciaPsico1.setBounds(7, 109, 270, 20);
 
         AlePsicol.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         AlePsicol.setText("Alerta - Psicologìa");
         PanelPsico2.add(AlePsicol);
-        AlePsicol.setBounds(10, 10, 185, 17);
+        AlePsicol.setBounds(10, 10, 185, 19);
 
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
@@ -423,7 +422,7 @@ public class Notificaciones extends javax.swing.JFrame {
         AlertEstudian1.setFont(new java.awt.Font("Roboto Light", 1, 12)); // NOI18N
         AlertEstudian1.setText("Generada Por:");
         PanelPsico2.add(AlertEstudian1);
-        AlertEstudian1.setBounds(10, 90, 87, 15);
+        AlertEstudian1.setBounds(10, 90, 81, 16);
 
         jPanel1.add(PanelPsico2, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 390, 300, 260));
 
