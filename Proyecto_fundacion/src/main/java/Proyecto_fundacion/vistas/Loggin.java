@@ -1,18 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package Proyecto_fundacion.vistas;
 
-/**
- *
- * @author USUARIO
- */
+
 public class Loggin extends javax.swing.JFrame {
 
-    /**
-     * Creates new form JFrame2
-     */
+   
     public Loggin() {
         initComponents();
         setVisible(true);
@@ -34,16 +26,16 @@ public class Loggin extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jTextFieldUsusario = new javax.swing.JTextField();
         Usuario = new javax.swing.JLabel();
-        jPasswordFielUsuario = new javax.swing.JPasswordField();
+        Password_Usuario = new javax.swing.JPasswordField();
         Contraseña = new javax.swing.JLabel();
         jButtonIngresar = new javax.swing.JButton();
         jButtonOlvidoContraseña = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        Mostar_Contraseña = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(1100, 700));
-        setPreferredSize(new java.awt.Dimension(1100, 700));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -87,9 +79,9 @@ public class Loggin extends javax.swing.JFrame {
         Usuario.setText("USUARIO:");
         jPanel1.add(Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 210, 40));
 
-        jPasswordFielUsuario.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
-        jPasswordFielUsuario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel1.add(jPasswordFielUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 360, 40));
+        Password_Usuario.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
+        Password_Usuario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jPanel1.add(Password_Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 360, 40));
 
         Contraseña.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         Contraseña.setText("CONTRASEÑA:");
@@ -125,6 +117,14 @@ public class Loggin extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/USUARIO.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 230, 230));
 
+        Mostar_Contraseña.setText("Mostrar Contraseña");
+        Mostar_Contraseña.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mostar_ContraseñaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Mostar_Contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 160, -1));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 700));
 
         pack();
@@ -145,6 +145,14 @@ public class Loggin extends javax.swing.JFrame {
     private void jButtonIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIngresarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonIngresarActionPerformed
+
+    private void Mostar_ContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mostar_ContraseñaActionPerformed
+       if(Mostar_Contraseña.isSelected()){
+           Password_Usuario.setEchoChar((char)0);
+       }else{
+           Password_Usuario.setEchoChar('*');
+       }
+    }//GEN-LAST:event_Mostar_ContraseñaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -190,6 +198,8 @@ public class Loggin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Contraseña;
+    private javax.swing.JCheckBox Mostar_Contraseña;
+    private javax.swing.JPasswordField Password_Usuario;
     private javax.swing.JLabel Usuario;
     private javax.swing.JButton jButtonIngresar;
     private javax.swing.JButton jButtonOlvidoContraseña;
@@ -197,7 +207,6 @@ public class Loggin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelImagen;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanelBordeImagen;
-    private javax.swing.JPasswordField jPasswordFielUsuario;
     private javax.swing.JTextField jTextFieldUsusario;
     // End of variables declaration//GEN-END:variables
 }
