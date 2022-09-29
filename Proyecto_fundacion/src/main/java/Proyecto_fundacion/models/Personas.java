@@ -12,7 +12,7 @@ public class Personas {
     private String PerNombres;
     private String PerApellidos;
     private String PerFotografia;
-    private Date PerFechadeNacimiento; //se importa java.util.date
+    private String PerFechadeNacimiento; //se importa java.util.date
     private String PerEstrato;
     private boolean PerEps;
     private boolean PerSisben;
@@ -81,11 +81,11 @@ public class Personas {
         this.PerFotografia = PerFotografia;
     }
 
-    public Date getPerFechadeNacimiento() {
+    public String getPerFechadeNacimiento() {
         return PerFechadeNacimiento;
     }
 
-    public void setPerFechadeNacimiento(Date PerFechadeNacimiento) {
+    public void setPerFechadeNacimiento(String PerFechadeNacimiento) {
         this.PerFechadeNacimiento = PerFechadeNacimiento;
     }
 

@@ -1,7 +1,4 @@
-
 package Proyecto_fundacion.models;
-
-import java.util.Date;
 
 public class Registros {
    
@@ -12,9 +9,9 @@ public class Registros {
     private int     ProId;
     private int     CoordId;
     private String  RegInasistencia;
-    private Date    RegFechaInasistencia;
+    private String  RegFechaInasistencia;
     private String  RegVoluntariado;
-    private Date    RegFechaVoluntariado;
+    private String    RegFechaVoluntariado;
 
     public Registros() {
     }
@@ -75,11 +72,11 @@ public class Registros {
         this.RegInasistencia = RegInasistencia;
     }
 
-    public Date getRegFechaInasistencia() {
+    public String getRegFechaInasistencia() {
         return RegFechaInasistencia;
     }
 
-    public void setRegFechaInasistencia(Date RegFechaInasistencia) {
+    public void setRegFechaInasistencia(String RegFechaInasistencia) {
         this.RegFechaInasistencia = RegFechaInasistencia;
     }
 
@@ -91,11 +88,11 @@ public class Registros {
         this.RegVoluntariado = RegVoluntariado;
     }
 
-    public Date getRegFechaVoluntariado() {
+    public String getRegFechaVoluntariado() {
         return RegFechaVoluntariado;
     }
 
-    public void setRegFechaVoluntariado(Date RegFechaVoluntariado) {
+    public void setRegFechaVoluntariado(String RegFechaVoluntariado) {
         this.RegFechaVoluntariado = RegFechaVoluntariado;
     }
 
