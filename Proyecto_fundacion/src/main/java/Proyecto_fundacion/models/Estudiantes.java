@@ -1,8 +1,6 @@
 
 package Proyecto_fundacion.models;
 
-import java.util.Date;
-
 public class Estudiantes extends Personas{
     
     private int     EstId;
@@ -11,10 +9,11 @@ public class Estudiantes extends Personas{
     private String  EstCodigo;
     private String  EstEdaddeInscripcion;
     private boolean EstTienePrograma;
+    private String  EstSexo;
     private String  EstPeso;
     private String  EstEstatura;
     private String  EstTipodeSangre;
-    private Date    EstFechadeInscripcion;
+    private String   EstFechadeInscripcion;
     private String  EstTalladeRopa;
     private String  EstTalladeZapatos;
     private String  EstGrado;
@@ -92,6 +91,14 @@ public class Estudiantes extends Personas{
     public void setEstTienePrograma(boolean EstTienePrograma) {
         this.EstTienePrograma = EstTienePrograma;
     }
+    
+    public String getEstSexo(){
+        return EstSexo;
+    }
+    
+    public void setEstSexo(String EstSexo) {
+        this.EstSexo = EstSexo;
+    }
 
     public String getEstPeso() {
         return EstPeso;
@@ -117,11 +124,11 @@ public class Estudiantes extends Personas{
         this.EstTipodeSangre = EstTipodeSangre;
     }
 
-    public Date getFechadeInscripcion() {
+    public String getFechadeInscripcion() {
         return EstFechadeInscripcion;
     }
 
-    public void setFechadeInscripcion(Date FechadeInscripcion) {
+    public void setFechadeInscripcion(String FechadeInscripcion) {
         this.EstFechadeInscripcion = FechadeInscripcion;
     }
 
@@ -331,6 +338,7 @@ public class Estudiantes extends Personas{
                 ", Fase=" + EstFase + ", Codigo=" + EstCodigo +
                 ", EdaddeInscripcion=" + EstEdaddeInscripcion + 
                 ", TienePrograma=" + EstTienePrograma + 
+                ", Sexo=" + EstSexo +
                 ", Peso=" + EstPeso + ", Estatura=" + EstEstatura +
                 ", TipodeSangre=" + EstTipodeSangre + 
                 ", FechadeInscripcion=" + EstFechadeInscripcion +

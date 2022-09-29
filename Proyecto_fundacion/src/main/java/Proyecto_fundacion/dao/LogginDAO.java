@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 
 public class LogginDAO {
-     Connection conn;
+    Connection conn;
     PreparedStatement ps;
     ResultSet rs;
     Conexion cn = new Conexion();
