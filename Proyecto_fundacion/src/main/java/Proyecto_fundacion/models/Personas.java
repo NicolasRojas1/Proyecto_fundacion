@@ -14,7 +14,7 @@ public class Personas {
     private String PerFotografia;
     private String PerFechadeNacimiento; //se importa java.util.date
     private String PerEstrato;
-    private boolean PerEps;
+    private String PerEps;
     private boolean PerSisben;
     private String PerCategoriaSisben;
     private String PerDomicilio;
@@ -97,11 +97,11 @@ public class Personas {
         this.PerEstrato = PerEstrato;
     }
 
-    public boolean isPerEps() {
+    public String getPerEps() {
         return PerEps;
     }
 
-    public void setPerEps(boolean PerEps) {
+    public void setPerEps(String PerEps) {
         this.PerEps = PerEps;
     }
 

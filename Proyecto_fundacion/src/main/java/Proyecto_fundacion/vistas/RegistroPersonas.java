@@ -4,17 +4,35 @@
  */
 package Proyecto_fundacion.vistas;
 
-/**
- *
- * @author nicro
- */
-public class CreacionPersonas extends javax.swing.JFrame {
+import Proyecto_fundacion.models.Personas;
+import com.toedter.calendar.JDateChooser;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import Proyecto_fundacion.controller.PersonasController;
+import com.mycompany.proyecto_fundacion.Main;
+import javax.swing.JOptionPane;
 
+
+public class RegistroPersonas extends javax.swing.JFrame {
+    
+    //Instanciar para poder utilizar
+    Personas persona = new Personas(); 
+    
+    //Asi accedo a los metodos del registro
+    PersonasController registro = new PersonasController();
+    
     /**
      * Creates new form CreacionPersonas
      */
-    public CreacionPersonas() {
+    public RegistroPersonas() {
         initComponents();
+        
+    }
+    
+    public static void main(String[] args){
+        
+        RegistroPersonas form = new RegistroPersonas();
+        form.setVisible(true);
     }
 
     /**
@@ -26,6 +44,7 @@ public class CreacionPersonas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        grupo_btn_sisben = new javax.swing.ButtonGroup();
         Panel_principal = new javax.swing.JPanel();
         txt_tipo_documento = new javax.swing.JLabel();
         txt_numero_documento = new javax.swing.JLabel();
@@ -59,6 +78,7 @@ public class CreacionPersonas extends javax.swing.JFrame {
         Campo_estrato1 = new javax.swing.JTextField();
         Campo_categoria_sis1 = new javax.swing.JTextField();
         txt_titulo = new javax.swing.JLabel();
+        btn_guardar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("fondo");
@@ -99,21 +119,34 @@ public class CreacionPersonas extends javax.swing.JFrame {
 
         box_tipo_documento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ninguno", "Registro Civil", "Tarjeta de Identidad", "Cedulda de Ciudadania", "Cedula de extranjeria", " " }));
 
+        Date_fecha_naci.setDateFormatString("dd/MM/yyyy");
+
+        grupo_btn_sisben.add(Radio_sisben_no);
         Radio_sisben_no.setText("No");
 
+        grupo_btn_sisben.add(Radio_sisben_si);
+        Radio_sisben_si.setSelected(true);
         Radio_sisben_si.setText("Si");
 
         txt_titulo.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         txt_titulo.setForeground(new java.awt.Color(102, 102, 102));
         txt_titulo.setText("FORMULARIO INSCRIPCIÓN DE PERSONAS");
 
+        btn_guardar.setText("GUARDAR");
+        btn_guardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_guardarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout Panel_principalLayout = new javax.swing.GroupLayout(Panel_principal);
         Panel_principal.setLayout(Panel_principalLayout);
         Panel_principalLayout.setHorizontalGroup(
             Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel_principalLayout.createSequentialGroup()
+            .addGroup(Panel_principalLayout.createSequentialGroup()
                 .addContainerGap(66, Short.MAX_VALUE)
                 .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txt_titulo)
                     .addGroup(Panel_principalLayout.createSequentialGroup()
                         .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Campo_eps, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -151,9 +184,12 @@ public class CreacionPersonas extends javax.swing.JFrame {
                             .addComponent(txt_apellidos)
                             .addComponent(Campo_apellidos1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Campo_estrato1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Campo_categoria_sis1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(txt_titulo))
+                            .addComponent(Campo_categoria_sis1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(77, 77, 77))
+            .addGroup(Panel_principalLayout.createSequentialGroup()
+                .addGap(200, 200, 200)
+                .addComponent(btn_guardar)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Panel_principalLayout.setVerticalGroup(
             Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,7 +232,6 @@ public class CreacionPersonas extends javax.swing.JFrame {
                 .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Date_fecha_naci, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Campo_edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Panel_principalLayout.createSequentialGroup()
                         .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -232,7 +267,9 @@ public class CreacionPersonas extends javax.swing.JFrame {
                         .addComponent(txt_categoria_sisben)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Campo_categoria_sis1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btn_guardar)
+                .addGap(35, 35, 35))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -243,46 +280,72 @@ public class CreacionPersonas extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Panel_principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Panel_principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CreacionPersonas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CreacionPersonas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CreacionPersonas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CreacionPersonas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarActionPerformed
+        
+        //Metodo para cambiar el formato de fecha
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MMMM-yyyy");
+        String date = sdf.format(Date_fecha_naci.getDate());
+        
+        // Para setear (llenar) la informacion en el modelo Personas
+        persona.setPerTipodeDocumento((String) box_tipo_documento.getSelectedItem());
+        persona.setPerNumerodeDocumento(Campo_num_documento.getText());
+        persona.setPerLugardeExpedicion(Campo_lugar_expe1.getText());
+        persona.setPerNombres(Campo_nombres1.getText());
+        persona.setPerApellidos(Campo_apellidos1.getText());
+        persona.setPerFotografia(Campo_foto.getText());
+        persona.setPerFechadeNacimiento(date);
+        persona.setPerEstrato(Campo_estrato1.getText());
+        persona.setPerEps(Campo_eps.getText());
+        if(Radio_sisben_si.isSelected()) {
+                persona.setPerSisben(true);
+        };
+        if(Radio_sisben_no.isSelected()) {
+            persona.setPerSisben(false);
         }
-        //</editor-fold>
+        persona.setPerCategoriaSisben(Campo_categoria_sis1.getText());
+        persona.setPerDomicilio(Campo_domicilio.getText());
+        persona.setPerBarrio(Campo_barrio.getText());
+        persona.setPerLocalidad(Campo_localidad.getText());
+        persona.setPerEdad(Campo_edad.getText());
+        
+        boolean respuesta = registro.registrar(persona);
+        
+        //Si se guardo con exito, entonces
+        if(respuesta) {
+            
+           //QUe le muestre al usuario una ventana
+           JOptionPane.showMessageDialog(rootPane, "Se guardó con éxito", "INFORMACION", JOptionPane.INFORMATION_MESSAGE);
+           
+           //Y aqui que limpie
+           box_tipo_documento.setSelectedIndex(0);
+           Campo_num_documento.setText("");
+           Campo_lugar_expe1.setText("");
+           Campo_nombres1.setText("");
+           Campo_apellidos1.setText("");
+           Campo_foto.setText("");
+           Date_fecha_naci.setDateFormatString("01-01-2000"); //revisar
+           Campo_estrato1.setText("");
+           Campo_eps.setText("");
+           Campo_categoria_sis1.setText("");
+           Campo_domicilio.setText("");
+           Campo_barrio.setText("");
+           Campo_localidad.setText("");
+           Campo_edad.setText("");      
+           
+        }
+         
+    }//GEN-LAST:event_btn_guardarActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new CreacionPersonas().setVisible(true);
-            }
-        });
-    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Campo_apellidos1;
@@ -302,6 +365,8 @@ public class CreacionPersonas extends javax.swing.JFrame {
     private javax.swing.JRadioButton Radio_sisben_no;
     private javax.swing.JRadioButton Radio_sisben_si;
     private javax.swing.JComboBox<String> box_tipo_documento;
+    private javax.swing.JButton btn_guardar;
+    private javax.swing.ButtonGroup grupo_btn_sisben;
     private javax.swing.JLabel txt_apellidos;
     private javax.swing.JLabel txt_barrio;
     private javax.swing.JLabel txt_categoria_sisben;
