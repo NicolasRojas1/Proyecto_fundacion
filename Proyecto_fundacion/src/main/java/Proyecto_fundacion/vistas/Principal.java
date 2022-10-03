@@ -16,9 +16,9 @@ public class Principal extends javax.swing.JFrame {
     public Principal() {
         initComponents();
         //this.setExtendedState(MAXIMIZED_BOTH);
-        setVisible(true);
-        setLocationRelativeTo(null);
-        setTitle("INICIO");
+        //setVisible(true);
+        //setLocationRelativeTo(null);
+        //setTitle("INICIO");
     }
 
     /**
