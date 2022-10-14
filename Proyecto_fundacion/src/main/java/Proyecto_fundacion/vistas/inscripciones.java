@@ -32,89 +32,90 @@ public class inscripciones extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
-        TitIns = new javax.swing.JLabel();
-        NomInsc = new javax.swing.JLabel();
-        CNomInsc = new javax.swing.JTextField();
-        CApelIns = new javax.swing.JLabel();
-        ApellIns = new javax.swing.JTextField();
-        SexoIns = new javax.swing.JLabel();
-        TipDoc = new javax.swing.JLabel();
+        txt_titulo = new javax.swing.JLabel();
+        txt_nombres = new javax.swing.JLabel();
+        campo_nombres = new javax.swing.JTextField();
+        txt_apellidos = new javax.swing.JLabel();
+        campo_apellidos = new javax.swing.JTextField();
+        txt_sexo = new javax.swing.JLabel();
+        box_sexo = new javax.swing.JComboBox<>();
+        txt_tipo_documento = new javax.swing.JLabel();
         jComboBoxTipDoc = new javax.swing.JComboBox<>();
-        NumDoc = new javax.swing.JLabel();
-        CNumDoc = new javax.swing.JTextField();
-        CLugExp = new javax.swing.JTextField();
-        LugExp1 = new javax.swing.JLabel();
-        FecNAc = new javax.swing.JLabel();
-        jDateChooserFecNAc = new com.toedter.calendar.JDateChooser();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        EdadIns = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        FecIns = new javax.swing.JLabel();
-        FaseIns = new javax.swing.JLabel();
-        CFasIns = new javax.swing.JTextField();
-        CCodAsig = new javax.swing.JLabel();
-        CCodASig = new javax.swing.JTextField();
-        DirIns = new javax.swing.JLabel();
-        CDirIns = new javax.swing.JTextField();
-        BarrioIns = new javax.swing.JLabel();
-        CBarrioInsc = new javax.swing.JTextField();
-        JorFunIns = new javax.swing.JLabel();
-        CJorFunIns = new javax.swing.JTextField();
-        LocIns = new javax.swing.JLabel();
-        CLocIns = new javax.swing.JTextField();
-        EstIns = new javax.swing.JLabel();
-        CFotIns = new javax.swing.JLabel();
-        CamFotIns = new javax.swing.JTextField();
-        TipProgIns = new javax.swing.JLabel();
-        CTipProgIns = new javax.swing.JComboBox<>();
-        ComMadIns = new javax.swing.JLabel();
-        CComMadIns = new javax.swing.JComboBox<>();
-        ConvPadrIns = new javax.swing.JLabel();
-        CconvPadrIns = new javax.swing.JComboBox<>();
-        CConvOtrIns = new javax.swing.JLabel();
-        CConOtrIns = new javax.swing.JComboBox<>();
-        DocComIns = new javax.swing.JLabel();
-        CDocComIns = new javax.swing.JTextField();
-        DocautIns = new javax.swing.JLabel();
-        CDocAutIns = new javax.swing.JTextField();
+        txt_numero_documento = new javax.swing.JLabel();
+        campo_numero_documento = new javax.swing.JTextField();
+        txt_lugar_expedicion = new javax.swing.JLabel();
+        campo_lugar_expedicion = new javax.swing.JTextField();
+        txt_fecha_nacimiento = new javax.swing.JLabel();
+        Date_fecha_inscripcion = new com.toedter.calendar.JDateChooser();
+        txt_ciudad_nacimiento = new javax.swing.JLabel();
+        campo_ciudad_nacimiento = new javax.swing.JTextField();
+        txt_edad = new javax.swing.JLabel();
+        campo_edad = new javax.swing.JTextField();
+        txt_fecha_inscripcion = new javax.swing.JLabel();
+        txt_fase = new javax.swing.JLabel();
+        campo_fase = new javax.swing.JTextField();
+        txt_codigo_asignado = new javax.swing.JLabel();
+        campo_codigo_asignado = new javax.swing.JTextField();
+        txt_direccion = new javax.swing.JLabel();
+        campo_direccion = new javax.swing.JTextField();
+        txt_barrio = new javax.swing.JLabel();
+        campo_barrio = new javax.swing.JTextField();
+        txt_jornada_fundacion = new javax.swing.JLabel();
+        campo_jornada_fundacion = new javax.swing.JTextField();
+        txt_localidad = new javax.swing.JLabel();
+        campo_localidad = new javax.swing.JTextField();
+        txt_estrato = new javax.swing.JLabel();
+        txt_foto = new javax.swing.JLabel();
+        campo_foto = new javax.swing.JTextField();
+        txt_tipo_programa = new javax.swing.JLabel();
+        box_tipo_programa = new javax.swing.JComboBox<>();
+        txt_convive_madre = new javax.swing.JLabel();
+        box_convive_madre = new javax.swing.JComboBox<>();
+        txt_convive_padre = new javax.swing.JLabel();
+        box_convive_padre = new javax.swing.JComboBox<>();
+        txt_convive_otro = new javax.swing.JLabel();
+        box_estrato = new javax.swing.JComboBox<>();
+        txt_documento_compromiso = new javax.swing.JLabel();
+        campo_documento_compromiso = new javax.swing.JTextField();
+        txt_documento_autorizacion = new javax.swing.JLabel();
+        campo_documento_autorizacion = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
-        DatosAcadèmicos1 = new javax.swing.JLabel();
-        Estudia = new javax.swing.JLabel();
-        CampoEstudio1 = new javax.swing.JComboBox<>();
-        Grado = new javax.swing.JLabel();
-        CampoGrado1 = new javax.swing.JTextField();
-        Colegio = new javax.swing.JLabel();
-        CampoColegio1 = new javax.swing.JTextField();
-        Jornada = new javax.swing.JLabel();
-        CampoJornada1 = new javax.swing.JComboBox<>();
-        DatosMedicos1 = new javax.swing.JLabel();
-        EPS1 = new javax.swing.JLabel();
-        CampoEps1 = new javax.swing.JTextField();
-        Sisben1 = new javax.swing.JLabel();
+        titulo_datos_academicos = new javax.swing.JLabel();
+        txt_estudia = new javax.swing.JLabel();
+        campo_estudia = new javax.swing.JComboBox<>();
+        txt_grado = new javax.swing.JLabel();
+        campo_grado = new javax.swing.JTextField();
+        txt_colegio = new javax.swing.JLabel();
+        campo_colegio = new javax.swing.JTextField();
+        txt_jornada = new javax.swing.JLabel();
+        box_jornada_colegio = new javax.swing.JComboBox<>();
+        titulo_datos_medicos = new javax.swing.JLabel();
+        txt_eps = new javax.swing.JLabel();
+        campo_eps = new javax.swing.JTextField();
+        txt_sisben = new javax.swing.JLabel();
         Categoria1 = new javax.swing.JLabel();
-        TipoSangre1 = new javax.swing.JLabel();
-        Peso1 = new javax.swing.JLabel();
-        CampoPeso1 = new javax.swing.JTextField();
-        Estatura1 = new javax.swing.JLabel();
-        CampoEstatura1 = new javax.swing.JTextField();
-        TallaZapat1 = new javax.swing.JLabel();
-        CampoTallaZapa1 = new javax.swing.JTextField();
-        TallaRopa1 = new javax.swing.JLabel();
-        CampoTallaRopa1 = new javax.swing.JTextField();
-        Discapacidad1 = new javax.swing.JLabel();
-        CampoDiscapa1 = new javax.swing.JComboBox<>();
-        NombDisca1 = new javax.swing.JLabel();
-        Campodisc1 = new java.awt.TextArea();
-        AlergíaMedic = new javax.swing.JLabel();
-        CampoAlergMed = new javax.swing.JComboBox<>();
-        Campoalermed = new java.awt.TextArea();
-        AlergAlimento = new javax.swing.JLabel();
-        CalergAlimen = new javax.swing.JComboBox<>();
-        Campomed = new java.awt.TextArea();
-        TomaMedicam1 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        Campomed1 = new java.awt.TextArea();
+        txt_tipo_sangre = new javax.swing.JLabel();
+        txt_peso = new javax.swing.JLabel();
+        campo_peso = new javax.swing.JTextField();
+        txt_estatura = new javax.swing.JLabel();
+        campo_estatura = new javax.swing.JTextField();
+        txt_talla_zapatos = new javax.swing.JLabel();
+        campo_talla_zapatos = new javax.swing.JTextField();
+        txt_talla_ropa = new javax.swing.JLabel();
+        campo_talla_ropa = new javax.swing.JTextField();
+        txt_discapacidad = new javax.swing.JLabel();
+        box_discapacidad = new javax.swing.JComboBox<>();
+        txt_nombre_discapacidad = new javax.swing.JLabel();
+        campo_nombre_discapacidad = new java.awt.TextArea();
+        txt_alergia_medicamento = new javax.swing.JLabel();
+        box_alergia_medicamento = new javax.swing.JComboBox<>();
+        campo_alergia_medicamento = new java.awt.TextArea();
+        txt_alergia_alimento = new javax.swing.JLabel();
+        box_alergia_alimento = new javax.swing.JComboBox<>();
+        campo_alergia_alimento = new java.awt.TextArea();
+        txt_toma_medicamento = new javax.swing.JLabel();
+        box_toma_medicamento = new javax.swing.JComboBox<>();
+        campo_toma_medicamento = new java.awt.TextArea();
         DatosMadre2 = new javax.swing.JLabel();
         CampoNomMadr2 = new javax.swing.JLabel();
         CampoNomMad2 = new javax.swing.JTextField();
@@ -282,23 +283,21 @@ public class inscripciones extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         BotAtrasInsPerAdm1 = new javax.swing.JButton();
-        jDateChooserFecNAc1 = new com.toedter.calendar.JDateChooser();
-        CConOtrIns1 = new javax.swing.JComboBox<>();
+        Date_fecha_nacimiento = new com.toedter.calendar.JDateChooser();
+        box_tipo_sangre = new javax.swing.JComboBox<>();
         CConOtrIns2 = new javax.swing.JComboBox<>();
-        jComboBoxTipDoc1 = new javax.swing.JComboBox<>();
         jComboBoxTipDoc2 = new javax.swing.JComboBox<>();
         jComboBoxTipDoc3 = new javax.swing.JComboBox<>();
-        CConOtrIns3 = new javax.swing.JComboBox<>();
-        CConOtrIns4 = new javax.swing.JComboBox<>();
+        box_convive_otro = new javax.swing.JComboBox<>();
+        box_sisben = new javax.swing.JComboBox<>();
         CApellFami5 = new javax.swing.JTextField();
         CApellFami6 = new javax.swing.JTextField();
         CApellFami7 = new javax.swing.JTextField();
-        CConOtrIns5 = new javax.swing.JComboBox<>();
         CApellFami8 = new javax.swing.JTextField();
-        jComboBoxTipDoc4 = new javax.swing.JComboBox<>();
+        box_tipo_documento = new javax.swing.JComboBox<>();
+        campo_categoria = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1100, 700));
         setResizable(false);
 
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
@@ -311,285 +310,298 @@ public class inscripciones extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(1100, 3800));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TitIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        TitIns.setText("INSCRIPCIONES");
-        jPanel1.add(TitIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, -1, -1));
+        txt_titulo.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_titulo.setText("INSCRIPCIONES");
+        jPanel1.add(txt_titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, -1, -1));
 
-        NomInsc.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        NomInsc.setText("Nombres");
-        jPanel1.add(NomInsc, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
-        jPanel1.add(CNomInsc, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 190, -1));
+        txt_nombres.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_nombres.setText("Nombres");
+        jPanel1.add(txt_nombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+        jPanel1.add(campo_nombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 190, -1));
 
-        CApelIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        CApelIns.setText("Apellidos");
-        jPanel1.add(CApelIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, -1, -1));
+        txt_apellidos.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_apellidos.setText("Apellidos");
+        jPanel1.add(txt_apellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, -1, -1));
 
-        ApellIns.addActionListener(new java.awt.event.ActionListener() {
+        campo_apellidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ApellInsActionPerformed(evt);
+                campo_apellidosActionPerformed(evt);
             }
         });
-        jPanel1.add(ApellIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 200, -1));
+        jPanel1.add(campo_apellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 200, -1));
 
-        SexoIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        SexoIns.setText("Sexo");
-        jPanel1.add(SexoIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 120, -1, -1));
+        txt_sexo.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_sexo.setText("Sexo");
+        jPanel1.add(txt_sexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 120, -1, -1));
 
-        TipDoc.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        TipDoc.setText("Tipo De Documento");
-        jPanel1.add(TipDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 150, -1));
+        box_sexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Masculino", "Femenino" }));
+        box_sexo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box_sexoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(box_sexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 140, 180, -1));
+
+        txt_tipo_documento.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_tipo_documento.setText("Tipo De Documento");
+        jPanel1.add(txt_tipo_documento, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 150, -1));
 
         jComboBoxTipDoc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Targeta de identidad", "Cedula de ciudadania", "Numero de identificacion tributario", "cedula de extranjeria" }));
+        jComboBoxTipDoc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxTipDocActionPerformed(evt);
+            }
+        });
         jPanel1.add(jComboBoxTipDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 1770, 180, -1));
 
-        NumDoc.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        NumDoc.setText("Numero De Documento");
-        jPanel1.add(NumDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 120, 170, -1));
-        jPanel1.add(CNumDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 140, 180, -1));
-        jPanel1.add(CLugExp, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 190, -1));
+        txt_numero_documento.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_numero_documento.setText("Numero De Documento");
+        jPanel1.add(txt_numero_documento, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 120, 170, -1));
+        jPanel1.add(campo_numero_documento, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 140, 180, -1));
 
-        LugExp1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        LugExp1.setText("Lugar De Expedición");
-        jPanel1.add(LugExp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 150, -1));
+        txt_lugar_expedicion.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_lugar_expedicion.setText("Lugar De Expedición");
+        jPanel1.add(txt_lugar_expedicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 150, -1));
+        jPanel1.add(campo_lugar_expedicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 190, -1));
 
-        FecNAc.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        FecNAc.setText("Fecha De Nacimiento");
-        jPanel1.add(FecNAc, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
-        jPanel1.add(jDateChooserFecNAc, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 190, 200, -1));
+        txt_fecha_nacimiento.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_fecha_nacimiento.setText("Fecha De Nacimiento");
+        jPanel1.add(txt_fecha_nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
+        jPanel1.add(Date_fecha_inscripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 190, 180, -1));
 
-        jLabel1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        jLabel1.setText("Ciudad De nacimiento");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, -1, -1));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 190, 180, -1));
+        txt_ciudad_nacimiento.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_ciudad_nacimiento.setText("Ciudad De nacimiento");
+        jPanel1.add(txt_ciudad_nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, -1, -1));
+        jPanel1.add(campo_ciudad_nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 190, 180, -1));
 
-        EdadIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        EdadIns.setText("Edad");
-        jPanel1.add(EdadIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, -1, -1));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 190, 180, -1));
+        txt_edad.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_edad.setText("Edad");
+        jPanel1.add(txt_edad, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, -1, -1));
+        jPanel1.add(campo_edad, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 190, 180, -1));
 
-        FecIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        FecIns.setText("Fecha De Inscripción");
-        jPanel1.add(FecIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 170, -1, -1));
+        txt_fecha_inscripcion.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_fecha_inscripcion.setText("Fecha De Inscripción");
+        jPanel1.add(txt_fecha_inscripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 170, -1, -1));
 
-        FaseIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        FaseIns.setText("Fase");
-        jPanel1.add(FaseIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
-        jPanel1.add(CFasIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 190, -1));
+        txt_fase.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_fase.setText("Fase");
+        jPanel1.add(txt_fase, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+        jPanel1.add(campo_fase, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 190, -1));
 
-        CCodAsig.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        CCodAsig.setText("Código Asignado");
-        jPanel1.add(CCodAsig, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 140, -1));
-        jPanel1.add(CCodASig, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 200, -1));
+        txt_codigo_asignado.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_codigo_asignado.setText("Código Asignado");
+        jPanel1.add(txt_codigo_asignado, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, 140, -1));
+        jPanel1.add(campo_codigo_asignado, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 200, -1));
 
-        DirIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        DirIns.setText("Dirección");
-        jPanel1.add(DirIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, 70, -1));
-        jPanel1.add(CDirIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, 180, -1));
+        txt_direccion.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_direccion.setText("Dirección");
+        jPanel1.add(txt_direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, 70, -1));
+        jPanel1.add(campo_direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, 180, -1));
 
-        BarrioIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        BarrioIns.setText("Barrio");
-        jPanel1.add(BarrioIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 220, -1, -1));
-        jPanel1.add(CBarrioInsc, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 240, 180, -1));
+        txt_barrio.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_barrio.setText("Barrio");
+        jPanel1.add(txt_barrio, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 220, -1, -1));
+        jPanel1.add(campo_barrio, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 240, 180, -1));
 
-        JorFunIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        JorFunIns.setText("Jornada Fundación");
-        jPanel1.add(JorFunIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 220, -1, -1));
-        jPanel1.add(CJorFunIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 240, 180, -1));
+        txt_jornada_fundacion.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_jornada_fundacion.setText("Jornada Fundación");
+        jPanel1.add(txt_jornada_fundacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 220, -1, -1));
+        jPanel1.add(campo_jornada_fundacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 240, 180, -1));
 
-        LocIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        LocIns.setText("Localidad");
-        jPanel1.add(LocIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
-        jPanel1.add(CLocIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 190, -1));
+        txt_localidad.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_localidad.setText("Localidad");
+        jPanel1.add(txt_localidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
+        jPanel1.add(campo_localidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 190, -1));
 
-        EstIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        EstIns.setText("Estrato");
-        jPanel1.add(EstIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, -1, -1));
+        txt_estrato.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_estrato.setText("Estrato");
+        jPanel1.add(txt_estrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, -1, -1));
 
-        CFotIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        CFotIns.setText("Fotografía");
-        jPanel1.add(CFotIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 280, -1, -1));
-        jPanel1.add(CamFotIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 300, 180, -1));
+        txt_foto.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_foto.setText("Fotografía");
+        jPanel1.add(txt_foto, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 280, -1, -1));
+        jPanel1.add(campo_foto, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 300, 180, -1));
 
-        TipProgIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        TipProgIns.setText("Tipo De Programa");
-        jPanel1.add(TipProgIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 280, -1, -1));
+        txt_tipo_programa.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_tipo_programa.setText("Tipo De Programa");
+        jPanel1.add(txt_tipo_programa, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 280, -1, -1));
 
-        CTipProgIns.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel1.add(CTipProgIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 300, 180, -1));
+        box_tipo_programa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel1.add(box_tipo_programa, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 300, 180, -1));
 
-        ComMadIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        ComMadIns.setText("Convive con la Madre");
-        jPanel1.add(ComMadIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 280, -1, -1));
+        txt_convive_madre.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_convive_madre.setText("Convive con la Madre");
+        jPanel1.add(txt_convive_madre, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 280, -1, -1));
 
-        CComMadIns.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Si", "No" }));
-        jPanel1.add(CComMadIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 300, 180, -1));
+        box_convive_madre.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Si", "No" }));
+        jPanel1.add(box_convive_madre, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 300, 180, -1));
 
-        ConvPadrIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        ConvPadrIns.setText("Convive con el Padre");
-        jPanel1.add(ConvPadrIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
+        txt_convive_padre.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_convive_padre.setText("Convive con el Padre");
+        jPanel1.add(txt_convive_padre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
 
-        CconvPadrIns.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Si ", "No" }));
-        jPanel1.add(CconvPadrIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 190, -1));
+        box_convive_padre.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Si ", "No" }));
+        jPanel1.add(box_convive_padre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 190, -1));
 
-        CConvOtrIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        CConvOtrIns.setText("Convive con otro");
-        jPanel1.add(CConvOtrIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, -1, -1));
+        txt_convive_otro.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_convive_otro.setText("Convive con otro");
+        jPanel1.add(txt_convive_otro, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, -1, -1));
 
-        CConOtrIns.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "0", "1", "2", "3", " " }));
-        jPanel1.add(CConOtrIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 200, -1));
+        box_estrato.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "0", "1", "2", "3", " " }));
+        jPanel1.add(box_estrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 200, -1));
 
-        DocComIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        DocComIns.setText("Documento Compromiso");
-        jPanel1.add(DocComIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 340, -1, -1));
-        jPanel1.add(CDocComIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, 180, -1));
+        txt_documento_compromiso.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_documento_compromiso.setText("Documento Compromiso");
+        jPanel1.add(txt_documento_compromiso, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 340, -1, -1));
+        jPanel1.add(campo_documento_compromiso, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, 180, -1));
 
-        DocautIns.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        DocautIns.setText("Documento Autorización");
-        jPanel1.add(DocautIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 340, -1, -1));
-        jPanel1.add(CDocAutIns, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 360, 180, -1));
+        txt_documento_autorizacion.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_documento_autorizacion.setText("Documento Autorización");
+        jPanel1.add(txt_documento_autorizacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 340, -1, -1));
+        jPanel1.add(campo_documento_autorizacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 360, 180, -1));
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 1040, -1));
 
-        DatosAcadèmicos1.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
-        DatosAcadèmicos1.setText("Datos Académicos");
-        jPanel1.add(DatosAcadèmicos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 390, 180, 30));
+        titulo_datos_academicos.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
+        titulo_datos_academicos.setText("Datos Académicos");
+        jPanel1.add(titulo_datos_academicos, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 390, 180, 30));
 
-        Estudia.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Estudia.setText("Estudia:");
-        jPanel1.add(Estudia, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, -1, -1));
+        txt_estudia.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_estudia.setText("Estudia");
+        jPanel1.add(txt_estudia, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, -1, -1));
 
-        CampoEstudio1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione Una Opción", "Si ", "No" }));
-        CampoEstudio1.addContainerListener(new java.awt.event.ContainerAdapter() {
+        campo_estudia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione Una Opción", "Si ", "No" }));
+        campo_estudia.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentAdded(java.awt.event.ContainerEvent evt) {
-                CampoEstudio1ComponentAdded(evt);
+                campo_estudiaComponentAdded(evt);
             }
         });
-        CampoEstudio1.addActionListener(new java.awt.event.ActionListener() {
+        campo_estudia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CampoEstudio1ActionPerformed(evt);
+                campo_estudiaActionPerformed(evt);
             }
         });
-        jPanel1.add(CampoEstudio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 170, -1));
+        jPanel1.add(campo_estudia, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 170, -1));
 
-        Grado.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Grado.setText("Grado:");
-        jPanel1.add(Grado, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, -1, 20));
+        txt_grado.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_grado.setText("Grado");
+        jPanel1.add(txt_grado, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, -1, 20));
 
-        CampoGrado1.addActionListener(new java.awt.event.ActionListener() {
+        campo_grado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CampoGrado1ActionPerformed(evt);
+                campo_gradoActionPerformed(evt);
             }
         });
-        jPanel1.add(CampoGrado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 460, 180, -1));
+        jPanel1.add(campo_grado, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 460, 180, -1));
 
-        Colegio.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Colegio.setText("Colegio:");
-        jPanel1.add(Colegio, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 440, 90, 20));
-        jPanel1.add(CampoColegio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 220, -1));
+        txt_colegio.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_colegio.setText("Colegio");
+        jPanel1.add(txt_colegio, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 440, 90, 20));
+        jPanel1.add(campo_colegio, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 220, -1));
 
-        Jornada.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Jornada.setText("Jornada");
-        jPanel1.add(Jornada, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 440, 150, 20));
+        txt_jornada.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_jornada.setText("Jornada");
+        jPanel1.add(txt_jornada, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 440, 150, 20));
 
-        CampoJornada1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione Una Opción" }));
-        CampoJornada1.addContainerListener(new java.awt.event.ContainerAdapter() {
+        box_jornada_colegio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione Una Opción" }));
+        box_jornada_colegio.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentAdded(java.awt.event.ContainerEvent evt) {
-                CampoJornada1ComponentAdded(evt);
+                box_jornada_colegioComponentAdded(evt);
             }
         });
-        CampoJornada1.addActionListener(new java.awt.event.ActionListener() {
+        box_jornada_colegio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CampoJornada1ActionPerformed(evt);
+                box_jornada_colegioActionPerformed(evt);
             }
         });
-        jPanel1.add(CampoJornada1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 460, 260, -1));
+        jPanel1.add(box_jornada_colegio, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 460, 190, -1));
 
-        DatosMedicos1.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
-        DatosMedicos1.setText("Datos Médicos");
-        jPanel1.add(DatosMedicos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 530, 160, -1));
+        titulo_datos_medicos.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
+        titulo_datos_medicos.setText("Datos Médicos");
+        jPanel1.add(titulo_datos_medicos, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 530, 160, -1));
 
-        EPS1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        EPS1.setText("EPS:");
-        jPanel1.add(EPS1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, 50, -1));
-        jPanel1.add(CampoEps1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 600, 190, -1));
+        txt_eps.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_eps.setText("EPS");
+        jPanel1.add(txt_eps, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, 50, -1));
+        jPanel1.add(campo_eps, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 600, 180, -1));
 
-        Sisben1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Sisben1.setText("Sisben:");
-        jPanel1.add(Sisben1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 580, -1, -1));
+        txt_sisben.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_sisben.setText("Sisben");
+        jPanel1.add(txt_sisben, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 580, -1, -1));
 
         Categoria1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Categoria1.setText("Categoria:");
-        jPanel1.add(Categoria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 580, -1, -1));
+        Categoria1.setText("Categoria");
+        jPanel1.add(Categoria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 580, -1, -1));
 
-        TipoSangre1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        TipoSangre1.setText("Tipo de Sangre:");
-        jPanel1.add(TipoSangre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 580, -1, -1));
+        txt_tipo_sangre.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_tipo_sangre.setText("Tipo de Sangre");
+        jPanel1.add(txt_tipo_sangre, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 580, -1, -1));
 
-        Peso1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Peso1.setText("Peso:");
-        jPanel1.add(Peso1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 580, -1, -1));
-        jPanel1.add(CampoPeso1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 600, 180, -1));
+        txt_peso.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_peso.setText("Peso");
+        jPanel1.add(txt_peso, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 580, -1, -1));
+        jPanel1.add(campo_peso, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 600, 180, -1));
 
-        Estatura1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Estatura1.setText("Estatura:");
-        jPanel1.add(Estatura1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 640, -1, -1));
-        jPanel1.add(CampoEstatura1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 660, 180, -1));
+        txt_estatura.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_estatura.setText("Estatura");
+        jPanel1.add(txt_estatura, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 640, -1, -1));
+        jPanel1.add(campo_estatura, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 660, 180, -1));
 
-        TallaZapat1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        TallaZapat1.setText("Talla zapatos:");
-        jPanel1.add(TallaZapat1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 640, -1, -1));
-        jPanel1.add(CampoTallaZapa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 660, 210, -1));
+        txt_talla_zapatos.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_talla_zapatos.setText("Talla zapatos");
+        jPanel1.add(txt_talla_zapatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 640, -1, -1));
+        jPanel1.add(campo_talla_zapatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 660, 180, -1));
 
-        TallaRopa1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        TallaRopa1.setText("Talla Ropa:");
-        jPanel1.add(TallaRopa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 640, -1, -1));
-        jPanel1.add(CampoTallaRopa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 660, 190, -1));
+        txt_talla_ropa.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_talla_ropa.setText("Talla Ropa");
+        jPanel1.add(txt_talla_ropa, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 640, 70, -1));
+        jPanel1.add(campo_talla_ropa, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 660, 190, -1));
 
-        Discapacidad1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Discapacidad1.setText("Discapacidad");
-        jPanel1.add(Discapacidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 710, -1, 20));
+        txt_discapacidad.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_discapacidad.setText("Discapacidad");
+        jPanel1.add(txt_discapacidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 710, -1, 20));
 
-        CampoDiscapa1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opciòn", "Si", "No" }));
-        jPanel1.add(CampoDiscapa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 710, 280, 30));
+        box_discapacidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opciòn", "Si", "No" }));
+        jPanel1.add(box_discapacidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 710, 160, -1));
 
-        NombDisca1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        NombDisca1.setText("Nombre la discapacidad");
-        jPanel1.add(NombDisca1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 770, -1, -1));
+        txt_nombre_discapacidad.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_nombre_discapacidad.setText("Nombre la discapacidad");
+        jPanel1.add(txt_nombre_discapacidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 770, -1, -1));
 
-        Campodisc1.setName("Describa cual o cuales"); // NOI18N
-        jPanel1.add(Campodisc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 790, 1010, 60));
+        campo_nombre_discapacidad.setName("Describa cual o cuales"); // NOI18N
+        jPanel1.add(campo_nombre_discapacidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 790, 1010, 60));
 
-        AlergíaMedic.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        AlergíaMedic.setText("Alergico a algún medicamento");
-        jPanel1.add(AlergíaMedic, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 860, -1, -1));
+        txt_alergia_medicamento.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_alergia_medicamento.setText("Alergico a algún medicamento");
+        jPanel1.add(txt_alergia_medicamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 860, -1, -1));
 
-        CampoAlergMed.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opciòn", "Si", "No" }));
-        CampoAlergMed.addActionListener(new java.awt.event.ActionListener() {
+        box_alergia_medicamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opciòn", "Si", "No" }));
+        box_alergia_medicamento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CampoAlergMedActionPerformed(evt);
+                box_alergia_medicamentoActionPerformed(evt);
             }
         });
-        jPanel1.add(CampoAlergMed, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 860, 300, 20));
-        jPanel1.add(Campoalermed, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 890, 1010, 50));
+        jPanel1.add(box_alergia_medicamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 860, 160, 20));
+        jPanel1.add(campo_alergia_medicamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 890, 1010, 50));
 
-        AlergAlimento.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        AlergAlimento.setText("Alergico a algún alimento");
-        jPanel1.add(AlergAlimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 950, -1, -1));
+        txt_alergia_alimento.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_alergia_alimento.setText("Alergico a algún alimento");
+        jPanel1.add(txt_alergia_alimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 950, -1, -1));
 
-        CalergAlimen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opción", "Si", "No" }));
-        jPanel1.add(CalergAlimen, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 950, 300, 20));
-        jPanel1.add(Campomed, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 980, 1010, 60));
+        box_alergia_alimento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opción", "Si", "No" }));
+        jPanel1.add(box_alergia_alimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 950, 170, 20));
+        jPanel1.add(campo_alergia_alimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 980, 1010, 60));
 
-        TomaMedicam1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        TomaMedicam1.setText("Toma  algún medicamento:");
-        jPanel1.add(TomaMedicam1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 1050, -1, -1));
+        txt_toma_medicamento.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_toma_medicamento.setText("Toma  algún medicamento:");
+        jPanel1.add(txt_toma_medicamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 1050, -1, -1));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opción", "Si", "No" }));
-        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 1050, 300, 20));
-        jPanel1.add(Campomed1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 1080, 1010, 60));
+        box_toma_medicamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opción", "Si", "No" }));
+        jPanel1.add(box_toma_medicamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 1050, 170, 20));
+        jPanel1.add(campo_toma_medicamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 1080, 1010, 60));
 
         DatosMadre2.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
         DatosMadre2.setText("Datos Madre");
@@ -1199,16 +1211,13 @@ public class inscripciones extends javax.swing.JFrame {
             }
         });
         jPanel1.add(BotAtrasInsPerAdm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 3380, 160, 30));
-        jPanel1.add(jDateChooserFecNAc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, 200, -1));
+        jPanel1.add(Date_fecha_nacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, 200, -1));
 
-        CConOtrIns1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" }));
-        jPanel1.add(CConOtrIns1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 600, 200, -1));
+        box_tipo_sangre.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" }));
+        jPanel1.add(box_tipo_sangre, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 600, 180, -1));
 
         CConOtrIns2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10", "C11", "C12", "C13", "C14", "C15", "C16", "C17", "C18", "D1 _____D21" }));
         jPanel1.add(CConOtrIns2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 2740, 210, -1));
-
-        jComboBoxTipDoc1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Masculino", "Femenino" }));
-        jPanel1.add(jComboBoxTipDoc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, 180, -1));
 
         jComboBoxTipDoc2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Tarjeta de identidad", "Cedula de ciudadania", "Numero de identificacion tributario", "cedula de extranjeria" }));
         jPanel1.add(jComboBoxTipDoc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 1270, 180, -1));
@@ -1216,11 +1225,11 @@ public class inscripciones extends javax.swing.JFrame {
         jComboBoxTipDoc3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Tarjeta de identidad", "Cedula de ciudadania", "Numero de identificacion tributario", "cedula de extranjeria" }));
         jPanel1.add(jComboBoxTipDoc3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 1530, 180, -1));
 
-        CConOtrIns3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Si", "No" }));
-        jPanel1.add(CConOtrIns3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 200, -1));
+        box_convive_otro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Si", "No" }));
+        jPanel1.add(box_convive_otro, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 200, -1));
 
-        CConOtrIns4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Si", "No" }));
-        jPanel1.add(CConOtrIns4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 600, 200, 20));
+        box_sisben.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Si", "No" }));
+        jPanel1.add(box_sisben, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 600, 180, 20));
 
         CApellFami5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1243,9 +1252,6 @@ public class inscripciones extends javax.swing.JFrame {
         });
         jPanel1.add(CApellFami7, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 2450, 200, -1));
 
-        CConOtrIns5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10", "C11", "C12", "C13", "C14", "C15", "C16", "C17", "C18", "D1 _____D21" }));
-        jPanel1.add(CConOtrIns5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 600, 200, -1));
-
         CApellFami8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CApellFami8ActionPerformed(evt);
@@ -1253,8 +1259,9 @@ public class inscripciones extends javax.swing.JFrame {
         });
         jPanel1.add(CApellFami8, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 2510, 200, -1));
 
-        jComboBoxTipDoc4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Tarjeta de identidad", "Cedula de ciudadania", "Numero de identificacion tributario", "cedula de extranjeria", "Registro civil" }));
-        jPanel1.add(jComboBoxTipDoc4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 140, 180, -1));
+        box_tipo_documento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Tarjeta de identidad", "Cedula de ciudadania", "Numero de identificacion tributario", "cedula de extranjeria", "Registro civil" }));
+        jPanel1.add(box_tipo_documento, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 140, 180, -1));
+        jPanel1.add(campo_categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 600, 190, -1));
 
         jScrollPane1.setViewportView(jPanel1);
 
@@ -1262,42 +1269,41 @@ public class inscripciones extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1100, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1101, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 26, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void CampoEstudio1ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_CampoEstudio1ComponentAdded
+    private void campo_estudiaComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_campo_estudiaComponentAdded
         // TODO add your handling code here:
-    }//GEN-LAST:event_CampoEstudio1ComponentAdded
+    }//GEN-LAST:event_campo_estudiaComponentAdded
 
-    private void CampoEstudio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoEstudio1ActionPerformed
+    private void campo_estudiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_estudiaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CampoEstudio1ActionPerformed
+    }//GEN-LAST:event_campo_estudiaActionPerformed
 
-    private void CampoGrado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoGrado1ActionPerformed
+    private void campo_gradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_gradoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CampoGrado1ActionPerformed
+    }//GEN-LAST:event_campo_gradoActionPerformed
 
-    private void CampoJornada1ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_CampoJornada1ComponentAdded
+    private void box_jornada_colegioComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_box_jornada_colegioComponentAdded
         // TODO add your handling code here:
-    }//GEN-LAST:event_CampoJornada1ComponentAdded
+    }//GEN-LAST:event_box_jornada_colegioComponentAdded
 
-    private void CampoJornada1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoJornada1ActionPerformed
+    private void box_jornada_colegioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box_jornada_colegioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CampoJornada1ActionPerformed
+    }//GEN-LAST:event_box_jornada_colegioActionPerformed
 
-    private void CampoAlergMedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoAlergMedActionPerformed
+    private void box_alergia_medicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box_alergia_medicamentoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CampoAlergMedActionPerformed
+    }//GEN-LAST:event_box_alergia_medicamentoActionPerformed
 
     private void CApellPad1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CApellPad1ActionPerformed
         // TODO add your handling code here:
@@ -1373,20 +1379,25 @@ public class inscripciones extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CApellFami8ActionPerformed
 
-    private void ApellInsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ApellInsActionPerformed
+    private void campo_apellidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_apellidosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ApellInsActionPerformed
+    }//GEN-LAST:event_campo_apellidosActionPerformed
+
+    private void box_sexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box_sexoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_box_sexoActionPerformed
+
+    private void jComboBoxTipDocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxTipDocActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxTipDocActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel ActividadFav;
-    private javax.swing.JLabel AlergAlimento;
-    private javax.swing.JLabel AlergíaMedic;
     private javax.swing.JLabel ApellFami;
     private javax.swing.JLabel ApellFami2;
     private javax.swing.JLabel ApellFami3;
     private javax.swing.JLabel ApellFami4;
-    private javax.swing.JTextField ApellIns;
     private javax.swing.JLabel ApellOtrPar;
     private javax.swing.JLabel ApellOtrPar1;
     private javax.swing.JLabel ApellOtrPar2;
@@ -1396,13 +1407,11 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JLabel BarriPadrins;
     private javax.swing.JLabel BarrioAcu;
     private javax.swing.JLabel BarrioDatBas;
-    private javax.swing.JLabel BarrioIns;
     private javax.swing.JLabel BarrioViveM;
     private javax.swing.JButton BotAtrasInsPerAdm1;
     private javax.swing.JButton BotAtrasInsPerCoord;
     private javax.swing.JScrollPane CActiFavor;
     private javax.swing.JTextArea CActiviFav;
-    private javax.swing.JLabel CApelIns;
     private javax.swing.JTextField CApellAcu;
     private javax.swing.JTextField CApellFami;
     private javax.swing.JTextField CApellFami2;
@@ -1414,28 +1423,15 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JTextField CApellFami8;
     private javax.swing.JTextField CApellPad1;
     private javax.swing.JTextField CBarrioAcu;
-    private javax.swing.JTextField CBarrioInsc;
     private javax.swing.JTextField CBarrioM2;
     private javax.swing.JTextField CBarrioP1;
     private javax.swing.JTextField CCelM2;
     private javax.swing.JTextField CCelP1;
-    private javax.swing.JTextField CCodASig;
-    private javax.swing.JLabel CCodAsig;
     private javax.swing.JTextArea CColorFav;
     private javax.swing.JScrollPane CColorFavor;
     private javax.swing.JScrollPane CComFavor;
-    private javax.swing.JComboBox<String> CComMadIns;
     private javax.swing.JTextArea CComiFavor;
-    private javax.swing.JComboBox<String> CConOtrIns;
-    private javax.swing.JComboBox<String> CConOtrIns1;
     private javax.swing.JComboBox<String> CConOtrIns2;
-    private javax.swing.JComboBox<String> CConOtrIns3;
-    private javax.swing.JComboBox<String> CConOtrIns4;
-    private javax.swing.JComboBox<String> CConOtrIns5;
-    private javax.swing.JLabel CConvOtrIns;
-    private javax.swing.JTextField CDirIns;
-    private javax.swing.JTextField CDocAutIns;
-    private javax.swing.JTextField CDocComIns;
     private javax.swing.JTextField CEdadAcu;
     private javax.swing.JTextField CEdadM2;
     private javax.swing.JTextField CEdadP1;
@@ -1444,17 +1440,12 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> CEstuFami3;
     private javax.swing.JComboBox<String> CEstuFami4;
     private javax.swing.JComboBox<String> CEstuFami5;
-    private javax.swing.JTextField CFasIns;
     private javax.swing.JLabel CFechNacAcu;
     private javax.swing.JLabel CFechNacM2;
     private javax.swing.JLabel CFechNacP1;
     private javax.swing.JTextField CFijoM2;
     private javax.swing.JTextField CFijoP1;
-    private javax.swing.JLabel CFotIns;
     private javax.swing.JComboBox<String> CHerVive;
-    private javax.swing.JTextField CJorFunIns;
-    private javax.swing.JTextField CLocIns;
-    private javax.swing.JTextField CLugExp;
     private javax.swing.JTextField CLugExp1;
     private javax.swing.JTextField CLugExpAcu;
     private javax.swing.JTextField CLugExpP1;
@@ -1468,11 +1459,9 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JLabel CNomFamil2;
     private javax.swing.JLabel CNomFamil3;
     private javax.swing.JLabel CNomFamil4;
-    private javax.swing.JTextField CNomInsc;
     private javax.swing.JLabel CNomOtPar;
     private javax.swing.JLabel CNomOtPar1;
     private javax.swing.JLabel CNomOtPar2;
-    private javax.swing.JTextField CNumDoc;
     private javax.swing.JTextField CNumDocAcu;
     private javax.swing.JTextField CNumDocM1;
     private javax.swing.JTextField CNumDocP1;
@@ -1483,11 +1472,8 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JTextField COtrPar2;
     private javax.swing.JScrollPane CPersFavo;
     private javax.swing.JTextArea CPersonajeFav;
-    private javax.swing.JComboBox<String> CTipProgIns;
-    private javax.swing.JComboBox<String> CalergAlimen;
     private javax.swing.JTextField CamApellidos;
     private javax.swing.JTextField CamBarrio;
-    private javax.swing.JTextField CamFotIns;
     private javax.swing.JTextField CamLocal1;
     private javax.swing.JTextField CamNacAcu;
     private javax.swing.JTextField CamNacM2;
@@ -1497,27 +1483,12 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> CamSerInternet;
     private javax.swing.JComboBox<String> CamSerLuz;
     private javax.swing.JComboBox<String> CamTipSisben;
-    private javax.swing.JComboBox<String> CampoAlergMed;
-    private javax.swing.JTextField CampoColegio1;
-    private javax.swing.JComboBox<String> CampoDiscapa1;
-    private javax.swing.JTextField CampoEps1;
-    private javax.swing.JTextField CampoEstatura1;
-    private javax.swing.JComboBox<String> CampoEstudio1;
-    private javax.swing.JTextField CampoGrado1;
-    private javax.swing.JComboBox<String> CampoJornada1;
     private javax.swing.JTextField CampoNomAcu;
     private javax.swing.JLabel CampoNomAcud;
     private javax.swing.JTextField CampoNomMad2;
     private javax.swing.JLabel CampoNomMadr2;
     private javax.swing.JTextField CampoNomPad1;
     private javax.swing.JLabel CampoNomPadre1;
-    private javax.swing.JTextField CampoPeso1;
-    private javax.swing.JTextField CampoTallaRopa1;
-    private javax.swing.JTextField CampoTallaZapa1;
-    private java.awt.TextArea Campoalermed;
-    private java.awt.TextArea Campodisc1;
-    private java.awt.TextArea Campomed;
-    private java.awt.TextArea Campomed1;
     private javax.swing.JTextField CanNomFam;
     private javax.swing.JTextField CanNomFam2;
     private javax.swing.JTextField CanNomFam3;
@@ -1527,64 +1498,40 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JTextField CanNomOtPar2;
     private javax.swing.JLabel CatSisben;
     private javax.swing.JLabel Categoria1;
-    private javax.swing.JComboBox<String> CconvPadrIns;
     private javax.swing.JTextField CdirecCasa;
     private javax.swing.JLabel CelularM;
     private javax.swing.JTextField ClocAcu;
     private javax.swing.JTextField ClocM2;
     private javax.swing.JTextField ClocP1;
-    private javax.swing.JLabel Colegio;
     private javax.swing.JLabel ColorFav;
-    private javax.swing.JLabel ComMadIns;
     private javax.swing.JLabel ComidaFav;
-    private javax.swing.JLabel ConvPadrIns;
     private javax.swing.JLabel DatBasFam;
     private com.toedter.calendar.JDateChooser DateMadIns;
-    private javax.swing.JLabel DatosAcadèmicos1;
+    private com.toedter.calendar.JDateChooser Date_fecha_inscripcion;
+    private com.toedter.calendar.JDateChooser Date_fecha_nacimiento;
     private javax.swing.JLabel DatosAcudiente;
     private javax.swing.JLabel DatosBasicosFamilia;
     private javax.swing.JLabel DatosMadre2;
-    private javax.swing.JLabel DatosMedicos1;
     private javax.swing.JLabel Datospadre2;
-    private javax.swing.JLabel DirIns;
     private javax.swing.JLabel DirecCasa;
-    private javax.swing.JLabel Discapacidad1;
-    private javax.swing.JLabel DocComIns;
-    private javax.swing.JLabel DocautIns;
-    private javax.swing.JLabel EPS1;
     private javax.swing.JLabel EdadAcu;
-    private javax.swing.JLabel EdadIns;
     private javax.swing.JLabel EdadM2;
     private javax.swing.JLabel EdadP1;
-    private javax.swing.JLabel EstIns;
-    private javax.swing.JLabel Estatura1;
     private javax.swing.JLabel EstudFam1;
     private javax.swing.JLabel EstudFam2;
     private javax.swing.JLabel EstudFam3;
     private javax.swing.JLabel EstudFam4;
-    private javax.swing.JLabel Estudia;
-    private javax.swing.JLabel FaseIns;
-    private javax.swing.JLabel FecIns;
-    private javax.swing.JLabel FecNAc;
     private javax.swing.JLabel FijoM;
-    private javax.swing.JLabel Grado;
-    private javax.swing.JLabel JorFunIns;
-    private javax.swing.JLabel Jornada;
     private javax.swing.JLabel LocAcu;
-    private javax.swing.JLabel LocIns;
     private javax.swing.JLabel LocM2;
     private javax.swing.JLabel LocP1;
-    private javax.swing.JLabel LugExp1;
     private javax.swing.JLabel LugExpDocACu;
     private javax.swing.JLabel LugExpDocP1;
     private javax.swing.JLabel LugarExpDoc;
     private javax.swing.JLabel NivEducAcu;
     private javax.swing.JLabel NivEducP1;
     private javax.swing.JLabel NivelEducM;
-    private javax.swing.JLabel NomInsc;
-    private javax.swing.JLabel NombDisca1;
     private javax.swing.JLabel NumCelP1;
-    private javax.swing.JLabel NumDoc;
     private javax.swing.JLabel NumDoc1;
     private javax.swing.JLabel NumDocAcu;
     private javax.swing.JLabel NumDocPadre1;
@@ -1595,41 +1542,67 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JLabel ParenOtPar1;
     private javax.swing.JLabel ParenOtPar2;
     private javax.swing.JLabel PersonajeFav;
-    private javax.swing.JLabel Peso1;
     private javax.swing.JButton RegistrarEstudiante;
     private javax.swing.JLabel SerAgua;
     private javax.swing.JLabel SerGas;
     private javax.swing.JLabel SerInternet;
     private javax.swing.JLabel SerLuz;
-    private javax.swing.JLabel SexoIns;
-    private javax.swing.JLabel Sisben1;
-    private javax.swing.JLabel TallaRopa1;
-    private javax.swing.JLabel TallaZapat1;
     private javax.swing.JLabel TelFijP1;
-    private javax.swing.JLabel TipDoc;
-    private javax.swing.JLabel TipProgIns;
     private javax.swing.JLabel TipSisben;
     private javax.swing.JLabel TipVivienda;
     private javax.swing.JLabel TipdocAcu;
     private javax.swing.JLabel TipdocMad1;
     private javax.swing.JLabel TipdocPad1;
-    private javax.swing.JLabel TipoSangre1;
-    private javax.swing.JLabel TitIns;
-    private javax.swing.JLabel TomaMedicam1;
     private javax.swing.JLabel ViLocal1;
     private javax.swing.JLabel ViviYOtros;
     private javax.swing.JLabel ViviYOtros1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> box_alergia_alimento;
+    private javax.swing.JComboBox<String> box_alergia_medicamento;
+    private javax.swing.JComboBox<String> box_convive_madre;
+    private javax.swing.JComboBox<String> box_convive_otro;
+    private javax.swing.JComboBox<String> box_convive_padre;
+    private javax.swing.JComboBox<String> box_discapacidad;
+    private javax.swing.JComboBox<String> box_estrato;
+    private javax.swing.JComboBox<String> box_jornada_colegio;
+    private javax.swing.JComboBox<String> box_sexo;
+    private javax.swing.JComboBox<String> box_sisben;
+    private javax.swing.JComboBox<String> box_tipo_documento;
+    private javax.swing.JComboBox<String> box_tipo_programa;
+    private javax.swing.JComboBox<String> box_tipo_sangre;
+    private javax.swing.JComboBox<String> box_toma_medicamento;
+    private java.awt.TextArea campo_alergia_alimento;
+    private java.awt.TextArea campo_alergia_medicamento;
+    private javax.swing.JTextField campo_apellidos;
+    private javax.swing.JTextField campo_barrio;
+    private javax.swing.JTextField campo_categoria;
+    private javax.swing.JTextField campo_ciudad_nacimiento;
+    private javax.swing.JTextField campo_codigo_asignado;
+    private javax.swing.JTextField campo_colegio;
+    private javax.swing.JTextField campo_direccion;
+    private javax.swing.JTextField campo_documento_autorizacion;
+    private javax.swing.JTextField campo_documento_compromiso;
+    private javax.swing.JTextField campo_edad;
+    private javax.swing.JTextField campo_eps;
+    private javax.swing.JTextField campo_estatura;
+    private javax.swing.JComboBox<String> campo_estudia;
+    private javax.swing.JTextField campo_fase;
+    private javax.swing.JTextField campo_foto;
+    private javax.swing.JTextField campo_grado;
+    private javax.swing.JTextField campo_jornada_fundacion;
+    private javax.swing.JTextField campo_localidad;
+    private javax.swing.JTextField campo_lugar_expedicion;
+    private java.awt.TextArea campo_nombre_discapacidad;
+    private javax.swing.JTextField campo_nombres;
+    private javax.swing.JTextField campo_numero_documento;
+    private javax.swing.JTextField campo_peso;
+    private javax.swing.JTextField campo_talla_ropa;
+    private javax.swing.JTextField campo_talla_zapatos;
+    private java.awt.TextArea campo_toma_medicamento;
     private javax.swing.JComboBox<String> jComboBoxTipDoc;
-    private javax.swing.JComboBox<String> jComboBoxTipDoc1;
     private javax.swing.JComboBox<String> jComboBoxTipDoc2;
     private javax.swing.JComboBox<String> jComboBoxTipDoc3;
-    private javax.swing.JComboBox<String> jComboBoxTipDoc4;
     private com.toedter.calendar.JDateChooser jDateAcudIns;
-    private com.toedter.calendar.JDateChooser jDateChooserFecNAc;
-    private com.toedter.calendar.JDateChooser jDateChooserFecNAc1;
     private com.toedter.calendar.JDateChooser jDatePadIns;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -1643,7 +1616,48 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel titulo_datos_academicos;
+    private javax.swing.JLabel titulo_datos_medicos;
+    private javax.swing.JLabel txt_alergia_alimento;
+    private javax.swing.JLabel txt_alergia_medicamento;
+    private javax.swing.JLabel txt_apellidos;
+    private javax.swing.JLabel txt_barrio;
+    private javax.swing.JLabel txt_ciudad_nacimiento;
+    private javax.swing.JLabel txt_codigo_asignado;
+    private javax.swing.JLabel txt_colegio;
+    private javax.swing.JLabel txt_convive_madre;
+    private javax.swing.JLabel txt_convive_otro;
+    private javax.swing.JLabel txt_convive_padre;
+    private javax.swing.JLabel txt_direccion;
+    private javax.swing.JLabel txt_discapacidad;
+    private javax.swing.JLabel txt_documento_autorizacion;
+    private javax.swing.JLabel txt_documento_compromiso;
+    private javax.swing.JLabel txt_edad;
+    private javax.swing.JLabel txt_eps;
+    private javax.swing.JLabel txt_estatura;
+    private javax.swing.JLabel txt_estrato;
+    private javax.swing.JLabel txt_estudia;
+    private javax.swing.JLabel txt_fase;
+    private javax.swing.JLabel txt_fecha_inscripcion;
+    private javax.swing.JLabel txt_fecha_nacimiento;
+    private javax.swing.JLabel txt_foto;
+    private javax.swing.JLabel txt_grado;
+    private javax.swing.JLabel txt_jornada;
+    private javax.swing.JLabel txt_jornada_fundacion;
+    private javax.swing.JLabel txt_localidad;
+    private javax.swing.JLabel txt_lugar_expedicion;
+    private javax.swing.JLabel txt_nombre_discapacidad;
+    private javax.swing.JLabel txt_nombres;
+    private javax.swing.JLabel txt_numero_documento;
+    private javax.swing.JLabel txt_peso;
+    private javax.swing.JLabel txt_sexo;
+    private javax.swing.JLabel txt_sisben;
+    private javax.swing.JLabel txt_talla_ropa;
+    private javax.swing.JLabel txt_talla_zapatos;
+    private javax.swing.JLabel txt_tipo_documento;
+    private javax.swing.JLabel txt_tipo_programa;
+    private javax.swing.JLabel txt_tipo_sangre;
+    private javax.swing.JLabel txt_titulo;
+    private javax.swing.JLabel txt_toma_medicamento;
     // End of variables declaration//GEN-END:variables
 }
