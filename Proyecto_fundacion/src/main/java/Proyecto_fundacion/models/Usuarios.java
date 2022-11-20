@@ -7,6 +7,7 @@ public class Usuarios {
     private int     RolId;
     private String  UsuUsuario;
     private String  UsuPassword;
+    private String  UsuRol;
 
     public Usuarios() {
     }
@@ -43,12 +44,19 @@ public class Usuarios {
         this.UsuPassword = UsuPassword;
     }
 
+    public String getUsuRol() {
+        return UsuRol;
+    }
+
+    public void setUsuRol(String UsuRol) {
+        this.UsuRol = UsuRol;
+    }
+
     @Override
     public String toString() {
-        return "Usuarios{" + "Id=" + UsuId + ", RolId=" + RolId + 
-                ", Usuario=" + UsuUsuario + 
-                ", Password=" + UsuPassword + '}';
+        return "Usuarios{" + "UsuId=" + UsuId + ", RolId=" + RolId + ", UsuUsuario=" + UsuUsuario 
+                + ", UsuPassword=" + UsuPassword + ", UsuRol=" + UsuRol + '}';
     }
-    
+
     
 }

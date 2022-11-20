@@ -13,14 +13,15 @@ public class Personas {
     private String PerApellidos;
     private String PerFotografia;
     private String PerFechadeNacimiento; //se importa java.util.date
-    private String PerEstrato;
-    private String PerEps;
-    private boolean PerSisben;
-    private String PerCategoriaSisben;
+    private String PerEdad; 
+    private String PerCiudadNacimiento;
     private String PerDomicilio;
     private String PerBarrio;
     private String PerLocalidad;
-    private String PerEdad;   
+    private String PerEstrato;
+    private String PerEps;
+    private boolean PerSisben;
+    private String PerSisbenCategoria;
 
     public Personas() {
     }
@@ -89,36 +90,20 @@ public class Personas {
         this.PerFechadeNacimiento = PerFechadeNacimiento;
     }
 
-    public String getPerEstrato() {
-        return PerEstrato;
+    public String getPerEdad() {
+        return PerEdad;
     }
 
-    public void setPerEstrato(String PerEstrato) {
-        this.PerEstrato = PerEstrato;
+    public void setPerEdad(String PerEdad) {
+        this.PerEdad = PerEdad;
     }
 
-    public String getPerEps() {
-        return PerEps;
+    public String getPerCiudadNacimiento() {
+        return PerCiudadNacimiento;
     }
 
-    public void setPerEps(String PerEps) {
-        this.PerEps = PerEps;
-    }
-
-    public boolean isPerSisben() {
-        return PerSisben;
-    }
-
-    public void setPerSisben(boolean PerSisben) {
-        this.PerSisben = PerSisben;
-    }
-
-    public String getPerCategoriaSisben() {
-        return PerCategoriaSisben;
-    }
-
-    public void setPerCategoriaSisben(String PerCategoriaSisben) {
-        this.PerCategoriaSisben = PerCategoriaSisben;
+    public void setPerCiudadNacimiento(String PerCiudadNacimiento) {
+        this.PerCiudadNacimiento = PerCiudadNacimiento;
     }
 
     public String getPerDomicilio() {
@@ -145,29 +130,47 @@ public class Personas {
         this.PerLocalidad = PerLocalidad;
     }
 
-    public String getPerEdad() {
-        return PerEdad;
+    public String getPerEstrato() {
+        return PerEstrato;
     }
 
-    public void setPerEdad(String PerEdad) {
-        this.PerEdad = PerEdad;
+    public void setPerEstrato(String PerEstrato) {
+        this.PerEstrato = PerEstrato;
+    }
+
+    public String getPerEps() {
+        return PerEps;
+    }
+
+    public void setPerEps(String PerEps) {
+        this.PerEps = PerEps;
+    }
+
+    public boolean isPerSisben() {
+        return PerSisben;
+    }
+
+    public void setPerSisben(boolean PerSisben) {
+        this.PerSisben = PerSisben;
+    }
+
+    public String getPerSisbenCategoria() {
+        return PerSisbenCategoria;
+    }
+
+    public void setPerSisbenCategoria(String PerSisbenCategoria) {
+        this.PerSisbenCategoria = PerSisbenCategoria;
     }
 
     @Override
     public String toString() {
-        return "Personas{" + "Id=" + PerId + ", TipodeDocumento="
-                + PerTipodeDocumento + ", NumerodeDocumento=" + 
-                PerNumerodeDocumento + ", LugardeExpedicion=" + 
-                PerLugardeExpedicion + ", Nombres=" + PerNombres 
-                + ", Apellidos=" + PerApellidos + ", Fotografia=" 
-                + PerFotografia + ", FechadeNacimiento=" 
-                + PerFechadeNacimiento + ", Estrato=" + 
-                PerEstrato + ", Eps=" + PerEps + ", Sisben=" 
-                + PerSisben + ", CategoriaSisben=" + 
-                PerCategoriaSisben + ", Domicilio=" + 
-                PerDomicilio + ", Barrio=" + PerBarrio + 
-                ", Localidad=" + PerLocalidad + ", Edad=" 
-                + PerEdad + '}';
-    }
-    
+        return "Personas{" + "PerId=" + PerId + ", PerTipodeDocumento=" + PerTipodeDocumento 
+                + ", PerNumerodeDocumento=" + PerNumerodeDocumento + ", PerLugardeExpedicion=" 
+                + PerLugardeExpedicion + ", PerNombres=" + PerNombres + ", PerApellidos=" + PerApellidos 
+                + ", PerFotografia=" + PerFotografia + ", PerFechadeNacimiento=" + PerFechadeNacimiento 
+                + ", PerEdad=" + PerEdad + ", PerCiudadNacimiento=" + PerCiudadNacimiento + ", PerDomicilio=" 
+                + PerDomicilio + ", PerBarrio=" + PerBarrio + ", PerLocalidad=" + PerLocalidad + ", PerEstrato=" 
+                + PerEstrato + ", PerEps=" + PerEps + ", PerSisben=" + PerSisben + ", PerSisbenCategoria=" 
+                + PerSisbenCategoria + '}';
+    }  
 }

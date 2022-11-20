@@ -79,6 +79,8 @@ public class RegistroPersonas extends javax.swing.JFrame {
         Campo_categoria_sis1 = new javax.swing.JTextField();
         txt_titulo = new javax.swing.JLabel();
         btn_guardar = new javax.swing.JButton();
+        txt_ciudad_nacimiento = new javax.swing.JLabel();
+        Campo_ciudad_nacimiento = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("fondo");
@@ -117,7 +119,12 @@ public class RegistroPersonas extends javax.swing.JFrame {
 
         txt_edad.setText("Edad:");
 
-        box_tipo_documento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ninguno", "Registro Civil", "Tarjeta de Identidad", "Cedulda de Ciudadania", "Cedula de extranjeria", " " }));
+        box_tipo_documento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ninguno", "Registro Civil", "Tarjeta de Identidad", "Cedula de Ciudadania", "Cedula de extranjeria", " " }));
+        box_tipo_documento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                box_tipo_documentoActionPerformed(evt);
+            }
+        });
 
         Date_fecha_naci.setDateFormatString("dd/MM/yyyy");
 
@@ -127,6 +134,12 @@ public class RegistroPersonas extends javax.swing.JFrame {
         grupo_btn_sisben.add(Radio_sisben_si);
         Radio_sisben_si.setSelected(true);
         Radio_sisben_si.setText("Si");
+
+        Campo_estrato1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Campo_estrato1ActionPerformed(evt);
+            }
+        });
 
         txt_titulo.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         txt_titulo.setForeground(new java.awt.Color(102, 102, 102));
@@ -139,57 +152,67 @@ public class RegistroPersonas extends javax.swing.JFrame {
             }
         });
 
+        txt_ciudad_nacimiento.setText("Ciudad de Nacimiento:");
+
         javax.swing.GroupLayout Panel_principalLayout = new javax.swing.GroupLayout(Panel_principal);
         Panel_principal.setLayout(Panel_principalLayout);
         Panel_principalLayout.setHorizontalGroup(
             Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Panel_principalLayout.createSequentialGroup()
-                .addContainerGap(66, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel_principalLayout.createSequentialGroup()
+                .addContainerGap(61, Short.MAX_VALUE)
                 .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(Panel_principalLayout.createSequentialGroup()
+                            .addGap(139, 139, 139)
+                            .addComponent(btn_guardar)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel_principalLayout.createSequentialGroup()
+                            .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Campo_eps, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(Panel_principalLayout.createSequentialGroup()
+                                        .addComponent(Radio_sisben_si, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(28, 28, 28)
+                                        .addComponent(Radio_sisben_no, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(txt_sisben)
+                                    .addComponent(txt_localidad)
+                                    .addComponent(txt_domicilio)
+                                    .addComponent(txt_eps)
+                                    .addComponent(Campo_localidad, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Campo_domicilio, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGap(63, 63, 63)
+                            .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Campo_barrio, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txt_categoria_sisben)
+                                .addComponent(txt_barrio)
+                                .addComponent(txt_estrato)
+                                .addComponent(Campo_estrato1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Campo_categoria_sis1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addComponent(txt_titulo)
                     .addGroup(Panel_principalLayout.createSequentialGroup()
                         .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Campo_eps, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(Panel_principalLayout.createSequentialGroup()
-                                    .addComponent(Radio_sisben_si, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(28, 28, 28)
-                                    .addComponent(Radio_sisben_no, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addComponent(Date_fecha_naci, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txt_sisben)
                                 .addComponent(txt_nombres)
                                 .addComponent(box_tipo_documento, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(txt_tipo_documento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(txt_lugar_expedicion)
                                 .addComponent(txt_fecha_nacimiento)
-                                .addComponent(txt_localidad)
-                                .addComponent(txt_domicilio)
-                                .addComponent(txt_eps)
                                 .addComponent(Campo_lugar_expe1)
-                                .addComponent(Campo_nombres1)
-                                .addComponent(Campo_localidad, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Campo_domicilio, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(Campo_nombres1))
+                            .addComponent(txt_ciudad_nacimiento))
                         .addGap(63, 63, 63)
                         .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Campo_barrio, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Campo_ciudad_nacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Campo_edad, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txt_categoria_sisben)
                             .addComponent(txt_numero_documento)
                             .addComponent(txt_foto)
                             .addComponent(Campo_num_documento, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Campo_foto, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_edad)
-                            .addComponent(txt_barrio)
-                            .addComponent(txt_estrato)
                             .addComponent(txt_apellidos)
-                            .addComponent(Campo_apellidos1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Campo_estrato1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Campo_categoria_sis1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(Campo_apellidos1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(77, 77, 77))
-            .addGroup(Panel_principalLayout.createSequentialGroup()
-                .addGap(200, 200, 200)
-                .addComponent(btn_guardar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Panel_principalLayout.setVerticalGroup(
             Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -232,6 +255,11 @@ public class RegistroPersonas extends javax.swing.JFrame {
                 .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Date_fecha_naci, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Campo_edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_ciudad_nacimiento)
+                    .addComponent(Campo_ciudad_nacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Panel_principalLayout.createSequentialGroup()
                         .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -267,9 +295,9 @@ public class RegistroPersonas extends javax.swing.JFrame {
                         .addComponent(txt_categoria_sisben)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Campo_categoria_sis1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(btn_guardar)
-                .addGap(35, 35, 35))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -280,10 +308,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Panel_principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(Panel_principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -303,7 +328,12 @@ public class RegistroPersonas extends javax.swing.JFrame {
         persona.setPerApellidos(Campo_apellidos1.getText());
         persona.setPerFotografia(Campo_foto.getText());
         persona.setPerFechadeNacimiento(date);
-        persona.setPerEstrato(Campo_estrato1.getText());
+        persona.setPerEdad(Campo_edad.getText());
+        persona.setPerCiudadNacimiento(Campo_ciudad_nacimiento.getText());
+        persona.setPerDomicilio(Campo_domicilio.getText());
+        persona.setPerBarrio(Campo_barrio.getText());
+        persona.setPerLocalidad(Campo_localidad.getText());        
+        persona.setPerEstrato(Campo_estrato1.getText());       
         persona.setPerEps(Campo_eps.getText());
         if(Radio_sisben_si.isSelected()) {
                 persona.setPerSisben(true);
@@ -311,11 +341,9 @@ public class RegistroPersonas extends javax.swing.JFrame {
         if(Radio_sisben_no.isSelected()) {
             persona.setPerSisben(false);
         }
-        persona.setPerCategoriaSisben(Campo_categoria_sis1.getText());
-        persona.setPerDomicilio(Campo_domicilio.getText());
-        persona.setPerBarrio(Campo_barrio.getText());
-        persona.setPerLocalidad(Campo_localidad.getText());
-        persona.setPerEdad(Campo_edad.getText());
+        persona.setPerSisbenCategoria(Campo_categoria_sis1.getText());
+        
+        
         
         boolean respuesta = registro.registrar(persona);
         
@@ -333,17 +361,26 @@ public class RegistroPersonas extends javax.swing.JFrame {
            Campo_apellidos1.setText("");
            Campo_foto.setText("");
            Date_fecha_naci.setDateFormatString("01-01-2000"); //revisar
-           Campo_estrato1.setText("");
-           Campo_eps.setText("");
-           Campo_categoria_sis1.setText("");
+           Campo_edad.setText(""); 
+           Campo_ciudad_nacimiento.setText("");
            Campo_domicilio.setText("");
            Campo_barrio.setText("");
            Campo_localidad.setText("");
-           Campo_edad.setText("");      
-           
+           Campo_estrato1.setText("");
+           Campo_eps.setText("");
+           Campo_categoria_sis1.setText("");
+   
         }
          
     }//GEN-LAST:event_btn_guardarActionPerformed
+
+    private void Campo_estrato1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Campo_estrato1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Campo_estrato1ActionPerformed
+
+    private void box_tipo_documentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_box_tipo_documentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_box_tipo_documentoActionPerformed
 
 
 
@@ -351,6 +388,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
     private javax.swing.JTextField Campo_apellidos1;
     private javax.swing.JTextField Campo_barrio;
     private javax.swing.JTextField Campo_categoria_sis1;
+    private javax.swing.JTextField Campo_ciudad_nacimiento;
     private javax.swing.JTextField Campo_domicilio;
     private javax.swing.JTextField Campo_edad;
     private javax.swing.JTextField Campo_eps;
@@ -370,6 +408,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
     private javax.swing.JLabel txt_apellidos;
     private javax.swing.JLabel txt_barrio;
     private javax.swing.JLabel txt_categoria_sisben;
+    private javax.swing.JLabel txt_ciudad_nacimiento;
     private javax.swing.JLabel txt_domicilio;
     private javax.swing.JLabel txt_edad;
     private javax.swing.JLabel txt_eps;

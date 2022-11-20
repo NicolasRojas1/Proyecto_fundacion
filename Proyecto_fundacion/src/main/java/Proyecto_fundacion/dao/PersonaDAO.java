@@ -1,6 +1,7 @@
 
 package Proyecto_fundacion.dao;
 
+import Proyecto_fundacion.models.Estudiantes;
 import Proyecto_fundacion.models.Personas;
 import java.sql.*;
 import java.util.logging.Level;
@@ -26,15 +27,16 @@ public class PersonaDAO {
                 + "PerApellidos,"
                 + "PerFotografia,"
                 + "PerFechadeNacimiento,"
-                + "PerEstrato,"
-                + "PerEps,"
-                + "PerSisben,"
-                + "PerCategoriaSisben,"
+                + "PerEdad,"
+                + "PerCiudadNacimiento,"
                 + "PerDomicilio,"
                 + "PerBarrio,"
                 + "PerLocalidad,"
-                + "PerEdad) "
-                + "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                + "PerEstrato,"
+                + "PerEps,"
+                + "PerSisben,"
+                + "PerSisbenCategoria) "
+                + "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";        
         try {
             
             ps = con.prepareStatement(sql);
@@ -45,15 +47,18 @@ public class PersonaDAO {
             ps.setString(5, personas.getPerApellidos());
             ps.setString(6, personas.getPerFotografia());
             ps.setString(7, personas.getPerFechadeNacimiento());
-            ps.setString(8, personas.getPerEstrato()); //Preguntar por que es de tipo char
-            ps.setString(9, personas.getPerEps()); 
-            ps.setBoolean(10, personas.isPerSisben());
-            ps.setString(11, personas.getPerCategoriaSisben());
-            ps.setString(12, personas.getPerDomicilio());
-            ps.setString(13, personas.getPerBarrio());
-            ps.setString(14, personas.getPerLocalidad());
-            ps.setString(15, personas.getPerEdad());
+            ps.setString(8, personas.getPerEdad());
+            ps.setString(9, personas.getPerCiudadNacimiento());
+            ps.setString(10, personas.getPerDomicilio());
+            ps.setString(11, personas.getPerBarrio());
+            ps.setString(12, personas.getPerLocalidad());
+            ps.setString(13, personas.getPerEstrato());
+            ps.setString(14, personas.getPerEps()); 
+            ps.setBoolean(15, personas.isPerSisben());
+            ps.setString(16, personas.getPerSisbenCategoria());
             ps.execute();
+            
+            String llave_foranea = Search_persona(personas.getPerNumerodeDocumento());            
             return true; //Esta es la respuesta que se le envia al controlador
             
         } catch (SQLException ex) {
@@ -71,5 +76,24 @@ public class PersonaDAO {
                 //System.out.println("No se logró cerrar la conexión");
             }
         }   
+    }
+    
+    public String Search_persona(String n_documento) {
+        
+        String numero_doc = null;
+        try {
+            String sql_est = "SELECT * FROM personas WHERE PerNumerodeDocumento = ?";
+            ps = con.prepareStatement(sql_est);
+            ps.setString(1, n_documento);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                //System.out.println(rs.getString(1));
+                numero_doc = rs.getString(1);
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }   
+        return numero_doc;
     }
 }
