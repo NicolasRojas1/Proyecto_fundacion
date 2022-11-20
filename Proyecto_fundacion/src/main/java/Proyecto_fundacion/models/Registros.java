@@ -4,14 +4,14 @@ public class Registros {
    
     private int     RegId;
     private int     EstId;
-    private int     PsicoId;
-    private int     AdmiId;
-    private int     ProId;
-    private int     CoordId;
-    private String  RegInasistencia;
-    private String  RegFechaInasistencia;
-    private String  RegVoluntariado;
-    private String    RegFechaVoluntariado;
+    private String  RegInasistencias;
+    private String  RegObservaciones;
+    private String  RegNotaTeatro;
+    private String  RegNotaDanzas;
+    private String  RegNotaMusica;
+    private String  RegNotaEduComplementaria;
+    private String  RegNotaAlmas;
+    private String  RegNotaAlimento;
 
     public Registros() {
     }
@@ -32,80 +32,78 @@ public class Registros {
         this.EstId = EstId;
     }
 
-    public int getPsicoId() {
-        return PsicoId;
+    public String getRegInasistencias() {
+        return RegInasistencias;
     }
 
-    public void setPsicoId(int PsicoId) {
-        this.PsicoId = PsicoId;
+    public void setRegInasistencias(String RegInasistencias) {
+        this.RegInasistencias = RegInasistencias;
     }
 
-    public int getAdmiId() {
-        return AdmiId;
+    public String getRegObservaciones() {
+        return RegObservaciones;
     }
 
-    public void setAdmiId(int AdmiId) {
-        this.AdmiId = AdmiId;
+    public void setRegObservaciones(String RegObservaciones) {
+        this.RegObservaciones = RegObservaciones;
     }
 
-    public int getProId() {
-        return ProId;
+    public String getRegNotaTeatro() {
+        return RegNotaTeatro;
     }
 
-    public void setProId(int ProId) {
-        this.ProId = ProId;
+    public void setRegNotaTeatro(String RegNotaTeatro) {
+        this.RegNotaTeatro = RegNotaTeatro;
     }
 
-    public int getCoordId() {
-        return CoordId;
+    public String getRegNotaDanzas() {
+        return RegNotaDanzas;
     }
 
-    public void setCoordId(int CoordId) {
-        this.CoordId = CoordId;
+    public void setRegNotaDanzas(String RegNotaDanzas) {
+        this.RegNotaDanzas = RegNotaDanzas;
     }
 
-    public String getRegInasistencia() {
-        return RegInasistencia;
+    public String getRegNotaMusica() {
+        return RegNotaMusica;
     }
 
-    public void setRegInasistencia(String RegInasistencia) {
-        this.RegInasistencia = RegInasistencia;
+    public void setRegNotaMusica(String RegNotaMusica) {
+        this.RegNotaMusica = RegNotaMusica;
     }
 
-    public String getRegFechaInasistencia() {
-        return RegFechaInasistencia;
+    public String getRegNotaEduComplementaria() {
+        return RegNotaEduComplementaria;
     }
 
-    public void setRegFechaInasistencia(String RegFechaInasistencia) {
-        this.RegFechaInasistencia = RegFechaInasistencia;
+    public void setRegNotaEduComplementaria(String RegNotaEduComplementaria) {
+        this.RegNotaEduComplementaria = RegNotaEduComplementaria;
     }
 
-    public String getRegVoluntariado() {
-        return RegVoluntariado;
+    public String getRegNotaAlmas() {
+        return RegNotaAlmas;
     }
 
-    public void setRegVoluntariado(String RegVoluntariado) {
-        this.RegVoluntariado = RegVoluntariado;
+    public void setRegNotaAlmas(String RegNotaAlmas) {
+        this.RegNotaAlmas = RegNotaAlmas;
     }
 
-    public String getRegFechaVoluntariado() {
-        return RegFechaVoluntariado;
+    public String getRegNotaAlimento() {
+        return RegNotaAlimento;
     }
 
-    public void setRegFechaVoluntariado(String RegFechaVoluntariado) {
-        this.RegFechaVoluntariado = RegFechaVoluntariado;
+    public void setRegNotaAlimento(String RegNotaAlimento) {
+        this.RegNotaAlimento = RegNotaAlimento;
     }
 
     @Override
     public String toString() {
-        return "Registros{" + "Id=" + RegId + 
-                ", EstId=" + EstId + ", PsicoId=" + PsicoId + 
-                ", AdmiId=" + AdmiId + ", ProId=" + ProId + 
-                ", CoordId=" + CoordId + 
-                ", Inasistencia=" + RegInasistencia + 
-                ", FechaInasistencia=" + RegFechaInasistencia + 
-                ", Voluntariado=" + RegVoluntariado + 
-                ", FechaVoluntariado=" + RegFechaVoluntariado + '}';
+        return "Registros{" + "RegId=" + RegId + ", EstId=" + EstId + ", RegInasistencias=" + RegInasistencias 
+                + ", RegObservaciones=" + RegObservaciones + ", RegNotaTeatro=" + RegNotaTeatro + ", RegNotaDanzas=" 
+                + RegNotaDanzas + ", RegNotaMusica=" + RegNotaMusica + ", RegNotaEduComplementaria=" + RegNotaEduComplementaria 
+                + ", RegNotaAlmas=" + RegNotaAlmas + ", RegNotaAlimento=" + RegNotaAlimento + '}';
     }
+
     
+ 
 }
