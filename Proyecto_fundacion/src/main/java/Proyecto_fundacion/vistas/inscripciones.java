@@ -94,7 +94,7 @@ public class inscripciones extends javax.swing.JFrame {
         txt_eps = new javax.swing.JLabel();
         campo_eps = new javax.swing.JTextField();
         txt_sisben = new javax.swing.JLabel();
-        Categoria1 = new javax.swing.JLabel();
+        txt_categoria = new javax.swing.JLabel();
         txt_tipo_sangre = new javax.swing.JLabel();
         txt_peso = new javax.swing.JLabel();
         campo_peso = new javax.swing.JTextField();
@@ -528,9 +528,9 @@ public class inscripciones extends javax.swing.JFrame {
         txt_sisben.setText("Sisben");
         jPanel1.add(txt_sisben, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 670, -1, -1));
 
-        Categoria1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Categoria1.setText("Categoria");
-        jPanel1.add(Categoria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 670, -1, -1));
+        txt_categoria.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_categoria.setText("Categoria");
+        jPanel1.add(txt_categoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 670, -1, -1));
 
         txt_tipo_sangre.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         txt_tipo_sangre.setText("Tipo de Sangre");
@@ -1332,7 +1332,6 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JScrollPane CColorFavor;
     private javax.swing.JScrollPane CComFavor;
     private javax.swing.JScrollPane CPersFavo;
-    private javax.swing.JLabel Categoria1;
     private com.toedter.calendar.JDateChooser Date_fecha_inscripcion;
     private com.toedter.calendar.JDateChooser Date_fecha_naci_acu;
     private com.toedter.calendar.JDateChooser Date_fecha_naci_m;
@@ -1492,6 +1491,7 @@ public class inscripciones extends javax.swing.JFrame {
     private javax.swing.JLabel txt_barrio_m;
     private javax.swing.JLabel txt_barrio_otros;
     private javax.swing.JLabel txt_barrio_p;
+    private javax.swing.JLabel txt_categoria;
     private javax.swing.JLabel txt_categoria_otros;
     private javax.swing.JLabel txt_cel_m;
     private javax.swing.JLabel txt_cel_p;

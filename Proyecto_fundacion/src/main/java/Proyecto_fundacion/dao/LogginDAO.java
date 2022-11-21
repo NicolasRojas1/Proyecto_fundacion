@@ -41,6 +41,7 @@ public class LogginDAO {
         return u;
     
 }
+    //Se puede implementar luego
     
  public boolean Registrar(Usuarios reg) {
 

@@ -1,6 +1,8 @@
 
 package Proyecto_fundacion.vistas;
 
+import javax.swing.JOptionPane;
+
 
 public class Loggin extends javax.swing.JFrame {
 
@@ -24,10 +26,10 @@ public class Loggin extends javax.swing.JFrame {
         jPanelBordeImagen = new javax.swing.JPanel();
         jLabelImagen = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jTextFieldUsusario = new javax.swing.JTextField();
-        Usuario = new javax.swing.JLabel();
-        Password_Usuario = new javax.swing.JPasswordField();
-        Contraseña = new javax.swing.JLabel();
+        campo_usuario = new javax.swing.JTextField();
+        txt_usuario = new javax.swing.JLabel();
+        campo_contrasena = new javax.swing.JPasswordField();
+        txt_contraseña = new javax.swing.JLabel();
         jButtonIngresar = new javax.swing.JButton();
         jButtonOlvidoContraseña = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -71,21 +73,26 @@ public class Loggin extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(420, 700));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextFieldUsusario.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
-        jTextFieldUsusario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel1.add(jTextFieldUsusario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 360, 40));
+        campo_usuario.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
+        campo_usuario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        campo_usuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campo_usuarioActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campo_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 360, 40));
 
-        Usuario.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Usuario.setText("USUARIO:");
-        jPanel1.add(Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 210, 40));
+        txt_usuario.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_usuario.setText("USUARIO:");
+        jPanel1.add(txt_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 210, 40));
 
-        Password_Usuario.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
-        Password_Usuario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel1.add(Password_Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 360, 40));
+        campo_contrasena.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
+        campo_contrasena.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jPanel1.add(campo_contrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 360, 40));
 
-        Contraseña.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Contraseña.setText("CONTRASEÑA:");
-        jPanel1.add(Contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 180, 40));
+        txt_contraseña.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_contraseña.setText("CONTRASEÑA:");
+        jPanel1.add(txt_contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 180, 40));
 
         jButtonIngresar.setBackground(new java.awt.Color(204, 204, 204));
         jButtonIngresar.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
@@ -143,29 +150,40 @@ public class Loggin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonOlvidoContraseñaActionPerformed
 
     private void jButtonIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIngresarActionPerformed
-        // TODO add your handling code here:
+       String usuario= campo_usuario.getText();
+        String contrasena= campo_contrasena.getText();
+        if(usuario.equals("admin")&& contrasena.equals("1234")){
+            PerfilAdministrador form= new PerfilAdministrador();
+            form.setVisible(true);
+        }else{
+            JOptionPane.showMessageDialog(null,"error");
+        }
     }//GEN-LAST:event_jButtonIngresarActionPerformed
 
     private void Mostar_ContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mostar_ContraseñaActionPerformed
        if(Mostar_Contraseña.isSelected()){
-           Password_Usuario.setEchoChar((char)0);
+           campo_contrasena.setEchoChar((char)0);
        }else{
-           Password_Usuario.setEchoChar('*');
+           campo_contrasena.setEchoChar('*');
        }
     }//GEN-LAST:event_Mostar_ContraseñaActionPerformed
 
+    private void campo_usuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_usuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campo_usuarioActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Contraseña;
     private javax.swing.JCheckBox Mostar_Contraseña;
-    private javax.swing.JPasswordField Password_Usuario;
-    private javax.swing.JLabel Usuario;
+    private javax.swing.JPasswordField campo_contrasena;
+    private javax.swing.JTextField campo_usuario;
     private javax.swing.JButton jButtonIngresar;
     private javax.swing.JButton jButtonOlvidoContraseña;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelImagen;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanelBordeImagen;
-    private javax.swing.JTextField jTextFieldUsusario;
+    private javax.swing.JLabel txt_contraseña;
+    private javax.swing.JLabel txt_usuario;
     // End of variables declaration//GEN-END:variables
 }
