@@ -1,7 +1,6 @@
 
 package Proyecto_fundacion.dao;
 
-import Proyecto_fundacion.models.Estudiantes;
 import Proyecto_fundacion.models.Personas;
 import java.sql.*;
 import java.util.logging.Level;
@@ -14,8 +13,8 @@ public class PersonaDAO {
     private static final Logger console = Logger.getLogger(PersonaDAO.class.getName());
     
     Connection con = new Conexion().getConnection();
-    PreparedStatement ps = null; //se inicializa en nulo
-    ResultSet rs = null; //nula por que aun no se usa
+    PreparedStatement ps = null; //se inicializa en nulo, es el que prepara la consulta
+    ResultSet rs = null; //nula por que aun no se usa, es el que obtiene el resultado
     
     public boolean Store(Personas personas){
         
@@ -58,7 +57,7 @@ public class PersonaDAO {
             ps.setString(16, personas.getPerSisbenCategoria());
             ps.execute();
             
-            String llave_foranea = Search_persona(personas.getPerNumerodeDocumento());            
+            int llave_foranea = Search_persona(personas.getPerNumerodeDocumento());            
             return true; //Esta es la respuesta que se le envia al controlador
             
         } catch (SQLException ex) {
@@ -78,22 +77,23 @@ public class PersonaDAO {
         }   
     }
     
-    public String Search_persona(String n_documento) {
+    //Busco la persona por medio del numero de documento y obtengo la llave primaria de esta
+    public int Search_persona(String n_documento) {
         
-        String numero_doc = null;
+        int llave_primaria_pesonas = 0;
         try {
-            String sql_est = "SELECT * FROM personas WHERE PerNumerodeDocumento = ?";
-            ps = con.prepareStatement(sql_est);
-            ps.setString(1, n_documento);
+            String sql_persona = "SELECT * FROM personas WHERE PerNumerodeDocumento = ?";
+            ps = con.prepareStatement(sql_persona); //preparo la consulta
+            ps.setString(1, n_documento); //Aqui busco el PerId con el numero de documento que introduzco
             rs = ps.executeQuery();
-            while(rs.next()){
-                //System.out.println(rs.getString(1));
-                numero_doc = rs.getString(1);
+            while(rs.next()){ //por que while
+                System.out.println(rs.getInt(1));
+                llave_primaria_pesonas = rs.getInt(1); //por que 1?
             }
             
         } catch (SQLException ex) {
             Logger.getLogger(PersonaDAO.class.getName()).log(Level.SEVERE, null, ex);
         }   
-        return numero_doc;
+        return llave_primaria_pesonas;
     }
 }
