@@ -1,6 +1,7 @@
 package com.mycompany.proyecto_fundacion;
 
 import Proyecto_fundacion.dao.Conexion;
+import Proyecto_fundacion.vistas.Loggin;
 import Proyecto_fundacion.vistas.Principal;
 import Proyecto_fundacion.vistas.RegistroPersonas;
 import java.sql.*;
@@ -11,7 +12,7 @@ public class Main {
     
     public static void main(String[] args){
         
-        RegistroPersonas form = new RegistroPersonas();
+        Loggin form = new Loggin();
         form.setVisible(true); // llamar a la ventana Principal para desencadenar el programa.
         
     }
