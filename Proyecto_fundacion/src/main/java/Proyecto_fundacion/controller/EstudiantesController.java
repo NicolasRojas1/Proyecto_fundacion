@@ -2,17 +2,22 @@
 package Proyecto_fundacion.controller;
 
 import Proyecto_fundacion.models.Estudiantes;
-import java.util.HashMap;
-import java.util.Map;
+import Proyecto_fundacion.dao.EstudianteDAO;
+import java.util.*;
+import java.util.logging.Logger;
 
 public class EstudiantesController {
     
-    Estudiantes estudiante = new Estudiantes();
+    private static final Logger console = Logger.getLogger(EstudiantesController.class.getName());
     
-    //public static void main(String[] args) {
+    EstudianteDAO edao = new EstudianteDAO();
+    
+    public boolean registrar_est(Estudiantes estudiante) {
         
-//        Map<Object, Object> listado = new HashMap<>();
-//        listado.put("id", "01");
-//        System.out.println(listado);
-//    }
+        //boolean respuesta = edao.Store_est(estudiante, llave_primaria_personas) {
+        
+    //}
+    return true;
+    }
+
 }
