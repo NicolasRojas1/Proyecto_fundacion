@@ -4,6 +4,9 @@
  */
 package Proyecto_fundacion.vistas;
 
+import java.text.SimpleDateFormat;
+
+
 /**
  *
  * @author USUARIO
@@ -12,6 +15,7 @@ public class PerfilAdministrador extends javax.swing.JFrame {
 
     private static final long serialVersionUID = 1L;
 
+    
     /**
      * Creates new form PerfilAdministrador2
      */
@@ -351,7 +355,7 @@ public class PerfilAdministrador extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void PerfilesPopupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent evt) {//GEN-FIRST:event_PerfilesPopupMenuWillBecomeVisible
-
+      
     }//GEN-LAST:event_PerfilesPopupMenuWillBecomeVisible
 
     private void PerfilesCaretPositionChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_PerfilesCaretPositionChanged
@@ -472,4 +476,14 @@ public class PerfilAdministrador extends javax.swing.JFrame {
     private javax.swing.JTextField rol;
     private javax.swing.JTextField telefono;
     // End of variables declaration//GEN-END:variables
+
+    private static class Date_fecha_naci {
+
+        private static Object getDate() {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        public Date_fecha_naci() {
+        }
+    }
 }

@@ -139,7 +139,9 @@ public class Loggin extends javax.swing.JFrame {
 
     private void jButtonIngresarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonIngresarMouseClicked
       this.dispose();
-      PerfilAdministrador ingresar = new PerfilAdministrador();
+      //PerfilAdministrador ingresar = new PerfilAdministrador();
+      //PerfilAdministrador ingresar = new PerfilAdministrador();
+      RegistroPersonas ingresar = new RegistroPersonas();
       ingresar.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButtonIngresarMouseClicked
 

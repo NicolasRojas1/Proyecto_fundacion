@@ -12,7 +12,8 @@ public class Main {
     
     public static void main(String[] args){
         
-        Loggin form = new Loggin();
+        //Loggin form = new Loggin();
+        Principal form = new Principal();
         form.setVisible(true); // llamar a la ventana Principal para desencadenar el programa.
         
     }
