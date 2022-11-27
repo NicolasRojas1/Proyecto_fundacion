@@ -3,7 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Proyecto_fundacion.vistas;
-
+import Proyecto_fundacion.models.Personas;
+import com.toedter.calendar.JDateChooser;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import Proyecto_fundacion.controller.PersonasController;
+import com.mycompany.proyecto_fundacion.Main;
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
 /**
  *
  * @author USUARIO
@@ -20,7 +28,12 @@ public class Perfil_estudiante extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setTitle("PERFIL DEL ESTUDIANTE");
     }
-
+//Instanciar para poder utilizar
+    Perfil_estudiante pestudiante = new Perfil_estudiante(); 
+    
+    //Asi accedo a los metodos del registro
+    Perfil_estudiante registro = new Perfil_estudiante();
+    private String date;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -402,7 +415,65 @@ public class Perfil_estudiante extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        
+        //Metodo para cambiar el formato de fecha
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MMMM-yyyy");
+        String date = sdf.format(Date_fecha_naci.getDate());
+        
+        // Para setear (llenar) la informacion en el modelo Personas
+        pestudiante.setPeestNombres((String) box_tipo_documento.getSelectedItem());
+        persona.setPerNumerodeDocumento(Campo_num_documento.getText());
+        persona.setPerLugardeExpedicion(Campo_lugar_expe1.getText());
+        persona.setPerNombres(Campo_nombres1.getText());
+        persona.setPerApellidos(Campo_apellidos1.getText());
+        persona.setPerFotografia(Campo_foto.getText());
+        persona.setPerFechadeNacimiento(date);
+        persona.setPerEdad(Campo_edad.getText());
+        persona.setPerCiudadNacimiento(Campo_ciudad_nacimiento.getText());
+        persona.setPerDomicilio(Campo_domicilio.getText());
+        persona.setPerBarrio(Campo_barrio.getText());
+        persona.setPerLocalidad(Campo_localidad.getText());        
+        persona.setPerEstrato(Campo_estrato1.getText());       
+        persona.setPerEps(Campo_eps.getText());
+        if(Radio_sisben_si.isSelected()) {
+                persona.setPerSisben(true);
+        };
+        if(Radio_sisben_no.isSelected()) {
+            persona.setPerSisben(false);
+        }
+        persona.setPerSisbenCategoria(Campo_categoria_sis1.getText());
+        
+        
+        
+        boolean respuesta = registro.registrar(persona);
+        
+        //Si se guardo con exito, entonces
+        if(respuesta) {
+            
+           //QUe le muestre al usuario una ventana
+           JOptionPane.showMessageDialog(rootPane, "Se guardó con éxito", "INFORMACION", JOptionPane.INFORMATION_MESSAGE);
+           
+           //Y aqui que limpie
+           box_tipo_documento.setSelectedIndex(0);
+           Campo_num_documento.setText("");
+           Campo_lugar_expe1.setText("");
+           Campo_nombres1.setText("");
+           Campo_apellidos1.setText("");
+           Campo_foto.setText("");
+           Date_fecha_naci.setDateFormatString("01-01-2000"); //revisar
+           Campo_edad.setText(""); 
+           Campo_ciudad_nacimiento.setText("");
+           Campo_domicilio.setText("");
+           Campo_barrio.setText("");
+           Campo_localidad.setText("");
+           Campo_estrato1.setText("");
+           Campo_eps.setText("");
+           Campo_categoria_sis1.setText("");
+   
+        }
+         
+    }                               
     private void siguiente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_siguiente2ActionPerformed
         this.dispose();
         Notificaciones  abrir= new Notificaciones();

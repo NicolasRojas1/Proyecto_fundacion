@@ -34,7 +34,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="Panel_principal" alignment="0" max="32767" attributes="0"/>
+          <Component id="Panel_principal" min="-2" pref="673" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -54,74 +54,117 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="61" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
-                              <Component id="btn_guardar" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="139" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txt_fecha_nacimiento" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Date_fecha_naci" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                  <Component id="Campo_edad" min="-2" pref="192" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="txt_edad" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="Campo_eps" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="Radio_sisben_si" min="-2" pref="60" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                          <Component id="Radio_sisben_no" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txt_sisben" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="Radio_sisben_si" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="Radio_sisben_no" min="-2" pref="63" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="txt_ciudad_nacimiento" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                  <Component id="Campo_ciudad_nacimiento" min="-2" pref="192" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txt_nombres" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="txt_lugar_expedicion" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Campo_lugar_expe1" max="32767" attributes="0"/>
                                       </Group>
-                                      <Component id="txt_sisben" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txt_localidad" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txt_domicilio" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txt_eps" min="-2" max="-2" attributes="0"/>
-                                      <Component id="Campo_localidad" min="-2" pref="151" max="-2" attributes="0"/>
-                                      <Component id="Campo_domicilio" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="box_tipo_documento" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txt_tipo_documento" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="Campo_nombres1" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="txt_numero_documento" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txt_foto" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Campo_num_documento" pref="208" max="32767" attributes="0"/>
+                                      <Component id="Campo_foto" alignment="0" min="-2" pref="192" max="-2" attributes="0"/>
+                                      <Component id="txt_apellidos" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Campo_apellidos1" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="Campo_barrio" min="-2" pref="151" max="-2" attributes="0"/>
-                                  <Component id="txt_categoria_sisben" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txt_barrio" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txt_estrato" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Campo_estrato1" min="-2" pref="151" max="-2" attributes="0"/>
-                                  <Component id="Campo_categoria_sis1" min="-2" pref="151" max="-2" attributes="0"/>
-                                  <Component id="jButton1Modificardatos" min="-2" max="-2" attributes="0"/>
+                              <Component id="txt_titulo" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txt_localidad" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Campo_localidad" min="-2" pref="151" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txt_barrio" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Campo_barrio" min="-2" pref="151" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txt_domicilio" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Campo_domicilio" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txt_estrato" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Campo_estrato1" min="-2" pref="151" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="Campo_eps" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
+                                      <Component id="txt_eps" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txt_categoria_sisben" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Campo_categoria_sis1" min="-2" pref="151" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
-                      </Group>
-                      <Component id="txt_titulo" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="Date_fecha_naci" max="32767" attributes="0"/>
-                                  <Component id="txt_nombres" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="box_tipo_documento" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txt_tipo_documento" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="txt_lugar_expedicion" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txt_fecha_nacimiento" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="Campo_lugar_expe1" max="32767" attributes="0"/>
-                                  <Component id="Campo_nombres1" max="32767" attributes="0"/>
-                              </Group>
-                              <Component id="txt_ciudad_nacimiento" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="Campo_ciudad_nacimiento" min="-2" pref="151" max="-2" attributes="0"/>
-                              <Component id="Campo_edad" min="-2" pref="151" max="-2" attributes="0"/>
-                              <Component id="txt_numero_documento" min="-2" max="-2" attributes="0"/>
-                              <Component id="txt_foto" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Campo_num_documento" min="-2" pref="151" max="-2" attributes="0"/>
-                              <Component id="Campo_foto" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                              <Component id="txt_edad" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="txt_apellidos" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Campo_apellidos1" min="-2" pref="151" max="-2" attributes="0"/>
-                          </Group>
+                          <EmptySpace min="77" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
+                  <Component id="btn_guardar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="18" max="32767" attributes="0"/>
+                  <Component id="jButton1Modificardatos" min="-2" pref="148" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="126" max="-2" attributes="0"/>
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -130,104 +173,98 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Component id="txt_titulo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="txt_tipo_documento" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="box_tipo_documento" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="txt_lugar_expedicion" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="Campo_lugar_expe1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txt_nombres" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="Campo_nombres1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="txt_fecha_nacimiento" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txt_numero_documento" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                  <Component id="Campo_num_documento" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="txt_tipo_documento" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="box_tipo_documento" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                          <Component id="txt_foto" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="Campo_foto" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txt_apellidos" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="Campo_apellidos1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="txt_edad" min="-2" max="-2" attributes="0"/>
+                          <Component id="txt_numero_documento" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="Campo_num_documento" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_lugar_expedicion" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_foto" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Campo_lugar_expe1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Campo_foto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_nombres" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_apellidos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Campo_nombres1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Campo_apellidos1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_fecha_nacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_edad" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="Date_fecha_naci" min="-2" max="-2" attributes="0"/>
                       <Component id="Campo_edad" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txt_ciudad_nacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Campo_ciudad_nacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="txt_localidad" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txt_barrio" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="Campo_localidad" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Campo_barrio" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="txt_domicilio" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txt_estrato" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="Campo_domicilio" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
-                          <Component id="Campo_estrato1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
-                          <Component id="txt_sisben" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="Radio_sisben_si" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Radio_sisben_no" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="txt_eps" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="Campo_eps" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton1Modificardatos" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="txt_categoria_sisben" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="Campo_categoria_sis1" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_localidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_barrio" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btn_guardar" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="71" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Campo_localidad" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Campo_barrio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_domicilio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_estrato" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Campo_domicilio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Campo_estrato1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="txt_sisben" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="Radio_sisben_no" min="-2" max="-2" attributes="0"/>
+                      <Component id="Radio_sisben_si" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txt_eps" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_categoria_sisben" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Campo_eps" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Campo_categoria_sis1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btn_guardar" min="-2" pref="22" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton1Modificardatos" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="299" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -405,10 +442,18 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton1Modificardatos">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Modificar datos"/>
+            <Property name="text" type="java.lang.String" value="MODIFICAR DATOS"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ModificardatosActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="IR A PERFIL ADMINISTRADOR"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
