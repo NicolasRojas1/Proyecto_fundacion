@@ -10,16 +10,25 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import Proyecto_fundacion.controller.PersonasController;
 import com.mycompany.proyecto_fundacion.Main;
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
 
 public class RegistroPersonas extends javax.swing.JFrame {
+
+    private static final long serialVersionUID = 1L;
+
+    private static int getSelectedRow() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     //Instanciar para poder utilizar
     Personas persona = new Personas(); 
     
     //Asi accedo a los metodos del registro
     PersonasController registro = new PersonasController();
+    private String date;
     
     /**
      * Creates new form CreacionPersonas
@@ -81,6 +90,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
         btn_guardar = new javax.swing.JButton();
         txt_ciudad_nacimiento = new javax.swing.JLabel();
         Campo_ciudad_nacimiento = new javax.swing.JTextField();
+        jButton1Modificardatos = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("fondo");
@@ -154,6 +164,13 @@ public class RegistroPersonas extends javax.swing.JFrame {
 
         txt_ciudad_nacimiento.setText("Ciudad de Nacimiento:");
 
+        jButton1Modificardatos.setText("Modificar datos");
+        jButton1Modificardatos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ModificardatosActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout Panel_principalLayout = new javax.swing.GroupLayout(Panel_principal);
         Panel_principal.setLayout(Panel_principalLayout);
         Panel_principalLayout.setHorizontalGroup(
@@ -187,7 +204,8 @@ public class RegistroPersonas extends javax.swing.JFrame {
                                 .addComponent(txt_barrio)
                                 .addComponent(txt_estrato)
                                 .addComponent(Campo_estrato1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Campo_categoria_sis1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(Campo_categoria_sis1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton1Modificardatos))))
                     .addComponent(txt_titulo)
                     .addGroup(Panel_principalLayout.createSequentialGroup()
                         .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -259,7 +277,6 @@ public class RegistroPersonas extends javax.swing.JFrame {
                 .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_ciudad_nacimiento)
                     .addComponent(Campo_ciudad_nacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
                 .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Panel_principalLayout.createSequentialGroup()
                         .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -290,14 +307,16 @@ public class RegistroPersonas extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txt_eps)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Campo_eps, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Campo_eps, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton1Modificardatos)))
                     .addGroup(Panel_principalLayout.createSequentialGroup()
                         .addComponent(txt_categoria_sisben)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Campo_categoria_sis1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(btn_guardar)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -382,6 +401,71 @@ public class RegistroPersonas extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_box_tipo_documentoActionPerformed
 
+    @SuppressWarnings("empty-statement")
+    private void jButton1ModificardatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ModificardatosActionPerformed
+        //int fila =persona.getSelectedRow();
+        //if(fila>=0){
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MMMM-yyyy");
+        String date = sdf.format(Date_fecha_naci.getDate());
+        persona.setPerTipodeDocumento((String) box_tipo_documento.getSelectedItem());
+        persona.setPerNumerodeDocumento(Campo_num_documento.getText());
+        persona.setPerLugardeExpedicion(Campo_lugar_expe1.getText());
+        persona.setPerNombres(Campo_nombres1.getText());
+        persona.setPerApellidos(Campo_apellidos1.getText());
+        persona.setPerFotografia(Campo_foto.getText());
+        persona.setPerFechadeNacimiento(date);
+        persona.setPerEdad(Campo_edad.getText());
+        persona.setPerCiudadNacimiento(Campo_ciudad_nacimiento.getText());
+        persona.setPerDomicilio(Campo_domicilio.getText());
+        persona.setPerBarrio(Campo_barrio.getText());
+        persona.setPerLocalidad(Campo_localidad.getText());        
+        persona.setPerEstrato(Campo_estrato1.getText());       
+        persona.setPerEps(Campo_eps.getText());
+        if(Radio_sisben_si.isSelected()) {
+                persona.setPerSisben(true);
+        //};
+        if(Radio_sisben_no.isSelected()) {
+            persona.setPerSisben(false);
+        }
+        persona.setPerSisbenCategoria(Campo_categoria_sis1.getText());
+        
+        
+        
+        boolean respuesta = registro.modificar(persona);
+        
+        if(respuesta) {
+            
+           //QUe le muestre al usuario una ventana
+           JOptionPane.showMessageDialog(rootPane, "Se guardó con éxito", "INFORMACION", JOptionPane.INFORMATION_MESSAGE);
+           
+           //Y aqui que limpie
+           box_tipo_documento.setSelectedIndex(0);
+           Campo_num_documento.setText("");
+           Campo_lugar_expe1.setText("");
+           Campo_nombres1.setText("");
+           Campo_apellidos1.setText("");
+           Campo_foto.setText("");
+           Date_fecha_naci.setDateFormatString("01-01-2000"); //revisar
+           Campo_edad.setText(""); 
+           Campo_ciudad_nacimiento.setText("");
+           Campo_domicilio.setText("");
+           Campo_barrio.setText("");
+           Campo_localidad.setText("");
+           Campo_estrato1.setText("");
+           Campo_eps.setText("");
+           Campo_categoria_sis1.setText("");
+   
+        }
+            
+          
+            
+        }
+    }//GEN-LAST:event_jButton1ModificardatosActionPerformed
+
+    public JButton getjButton1Modificardatos() {
+        return jButton1Modificardatos;
+    }
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -405,6 +489,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> box_tipo_documento;
     private javax.swing.JButton btn_guardar;
     private javax.swing.ButtonGroup grupo_btn_sisben;
+    private javax.swing.JButton jButton1Modificardatos;
     private javax.swing.JLabel txt_apellidos;
     private javax.swing.JLabel txt_barrio;
     private javax.swing.JLabel txt_categoria_sisben;

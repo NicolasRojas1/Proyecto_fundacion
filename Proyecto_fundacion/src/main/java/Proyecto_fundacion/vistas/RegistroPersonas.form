@@ -88,6 +88,7 @@
                                   <Component id="txt_estrato" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="Campo_estrato1" min="-2" pref="151" max="-2" attributes="0"/>
                                   <Component id="Campo_categoria_sis1" min="-2" pref="151" max="-2" attributes="0"/>
+                                  <Component id="jButton1Modificardatos" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -176,7 +177,6 @@
                       <Component id="txt_ciudad_nacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Campo_ciudad_nacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -214,7 +214,10 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="txt_eps" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="Campo_eps" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="Campo_eps" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButton1Modificardatos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="txt_categoria_sisben" min="-2" max="-2" attributes="0"/>
@@ -224,7 +227,7 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btn_guardar" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="53" max="32767" attributes="0"/>
+                  <EmptySpace pref="71" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -399,6 +402,14 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="Campo_ciudad_nacimiento">
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton1Modificardatos">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Modificar datos"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ModificardatosActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
