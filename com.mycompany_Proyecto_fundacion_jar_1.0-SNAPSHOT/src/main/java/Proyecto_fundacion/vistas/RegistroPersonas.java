@@ -403,8 +403,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
 
     @SuppressWarnings("empty-statement")
     private void jButton1ModificardatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ModificardatosActionPerformed
-        //int fila =persona.getSelectedRow();
-        //if(fila>=0){
+        
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MMMM-yyyy");
         String date = sdf.format(Date_fecha_naci.getDate());
         persona.setPerTipodeDocumento((String) box_tipo_documento.getSelectedItem());
@@ -423,7 +422,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
         persona.setPerEps(Campo_eps.getText());
         if(Radio_sisben_si.isSelected()) {
                 persona.setPerSisben(true);
-        //};
+        };
         if(Radio_sisben_no.isSelected()) {
             persona.setPerSisben(false);
         }
@@ -436,7 +435,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
         if(respuesta) {
             
            //QUe le muestre al usuario una ventana
-           JOptionPane.showMessageDialog(rootPane, "Se guardó con éxito", "INFORMACION", JOptionPane.INFORMATION_MESSAGE);
+           JOptionPane.showMessageDialog(rootPane, "Se modificó con éxito", "INFORMACION", JOptionPane.INFORMATION_MESSAGE);
            
            //Y aqui que limpie
            box_tipo_documento.setSelectedIndex(0);
@@ -459,7 +458,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
             
           
             
-        }
+        
     }//GEN-LAST:event_jButton1ModificardatosActionPerformed
 
     public JButton getjButton1Modificardatos() {
