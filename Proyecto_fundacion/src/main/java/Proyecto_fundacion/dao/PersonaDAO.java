@@ -3,6 +3,8 @@ package Proyecto_fundacion.dao;
 
 import Proyecto_fundacion.models.Personas;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -156,4 +158,36 @@ public class PersonaDAO {
         }   
         return llave_primaria_pesonas;
     }
+    public List Listar() {
+
+        List<Personas> listaPer = new ArrayList();
+        String sql = "SELECT * FROM Personas";
+
+        try {
+
+            Connection con = new Conexion().getConnection();
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+
+                Personas Per = new Personas();
+                Per.setPerId(rs.getInt(1));
+                Per.setPerNombres(rs.getString(5));
+                Per.setPerApellidos(rs.getString(6));
+                Per.setPerTipodeDocumento(rs.getString(2));
+                Per.setPerNumerodeDocumento(rs.getString(3));
+                Per.setPerEdad(rs.getString(9));
+                
+                
+                listaPer.add(Per);
+            }
+
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+        }
+        return listaPer;
+
+        }
+
 }
