@@ -62,17 +62,15 @@ private void ListarPersonas(){
         jScrollPane2 = new javax.swing.JScrollPane();
         TablaListado = new javax.swing.JTable();
         btn_IrPerCoord = new javax.swing.JButton();
-        BarraMorada = new javax.swing.JLabel();
         Busqueda_estudiante = new javax.swing.JTextField();
         btn_buscar = new javax.swing.JButton();
         jButtonIrNotif = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        BarraMorada = new javax.swing.JLabel();
         btn_irPerAdm = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1100, 600));
 
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         jScrollPane1.setViewportBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -107,14 +105,15 @@ private void ListarPersonas(){
                 return canEdit [columnIndex];
             }
         });
+        TablaListado.setGridColor(new java.awt.Color(255, 255, 255));
         jScrollPane2.setViewportView(TablaListado);
 
         jPanel2.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 1060, 250));
 
         btn_IrPerCoord.setBackground(new java.awt.Color(204, 204, 204));
-        btn_IrPerCoord.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        btn_IrPerCoord.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         btn_IrPerCoord.setText("IR A PERFIL COORD");
-        btn_IrPerCoord.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
+        btn_IrPerCoord.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_IrPerCoord.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_IrPerCoordMouseClicked(evt);
@@ -127,20 +126,14 @@ private void ListarPersonas(){
         });
         jPanel2.add(btn_IrPerCoord, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 550, 190, 40));
 
-        BarraMorada.setBackground(new java.awt.Color(255, 255, 255));
-        BarraMorada.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
-        BarraMorada.setText("  Lista de Estudiantes");
-        BarraMorada.setOpaque(true);
-        jPanel2.add(BarraMorada, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 200, 31));
-
         Busqueda_estudiante.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
         Busqueda_estudiante.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel2.add(Busqueda_estudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 220, 310, 40));
+        jPanel2.add(Busqueda_estudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 220, 310, 30));
 
         btn_buscar.setBackground(new java.awt.Color(204, 204, 204));
-        btn_buscar.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
+        btn_buscar.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         btn_buscar.setText("Buscar");
-        btn_buscar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_buscar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_buscar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_buscarMouseClicked(evt);
@@ -151,12 +144,12 @@ private void ListarPersonas(){
                 btn_buscarActionPerformed(evt);
             }
         });
-        jPanel2.add(btn_buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 220, 190, 40));
+        jPanel2.add(btn_buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 220, 140, 30));
 
         jButtonIrNotif.setBackground(new java.awt.Color(204, 204, 204));
-        jButtonIrNotif.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        jButtonIrNotif.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         jButtonIrNotif.setText("IR A NOTIFICACIONES");
-        jButtonIrNotif.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButtonIrNotif.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButtonIrNotif.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButtonIrNotifMouseClicked(evt);
@@ -169,27 +162,16 @@ private void ListarPersonas(){
         });
         jPanel2.add(jButtonIrNotif, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 550, 180, 40));
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 688, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 98, Short.MAX_VALUE)
-        );
-
-        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 690, 100));
-
         jPanel3.setBackground(new java.awt.Color(204, 204, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logoFNH2.jpg"))); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        BarraMorada.setBackground(new java.awt.Color(204, 204, 255));
+        BarraMorada.setFont(new java.awt.Font("Lucida Fax", 1, 18)); // NOI18N
+        BarraMorada.setText("LISTADO ESTUDIANTES");
+        BarraMorada.setOpaque(true);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -198,22 +180,28 @@ private void ListarPersonas(){
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(36, 36, 36)
                 .addComponent(jLabel1)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 431, Short.MAX_VALUE)
+                .addComponent(BarraMorada, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(jLabel1)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BarraMorada, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43))
         );
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 150));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1080, 130));
 
         btn_irPerAdm.setBackground(new java.awt.Color(204, 204, 204));
-        btn_irPerAdm.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        btn_irPerAdm.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         btn_irPerAdm.setText("IR A PERFIL ADMIN");
-        btn_irPerAdm.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(204, 204, 204), null, null));
+        btn_irPerAdm.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_irPerAdm.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_irPerAdmMouseClicked(evt);
@@ -236,7 +224,7 @@ private void ListarPersonas(){
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1120, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -300,7 +288,6 @@ private void ListarPersonas(){
     public javax.swing.JButton btn_irPerAdm;
     private javax.swing.JButton jButtonIrNotif;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
