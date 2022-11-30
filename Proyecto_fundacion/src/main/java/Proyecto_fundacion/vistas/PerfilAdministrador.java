@@ -33,7 +33,6 @@ public class PerfilAdministrador extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
-        logo2 = new javax.swing.JLabel();
         Perfiles = new javax.swing.JComboBox<>();
         btn_inscripciones = new javax.swing.JButton();
         btn_listados = new javax.swing.JButton();
@@ -61,7 +60,7 @@ public class PerfilAdministrador extends javax.swing.JFrame {
         BotSiguiPerAdm2 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        logo2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -71,16 +70,12 @@ public class PerfilAdministrador extends javax.swing.JFrame {
         jScrollPane1.setPreferredSize(new java.awt.Dimension(1100, 700));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        logo2.setBackground(new java.awt.Color(153, 153, 153));
-        logo2.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
-        logo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        logo2.setText("PERFIL ADMINISTRADOR");
-        jPanel1.add(logo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 80, 230, 30));
-
-        Perfiles.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        Perfiles.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Coordinador", "Estudiante", "Profesor", "" }));
+        Perfiles.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
+        Perfiles.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Coordinador", "Estudiante", "Profesor" }));
+        Perfiles.setPreferredSize(new java.awt.Dimension(120, 25));
         Perfiles.addPopupMenuListener(new javax.swing.event.PopupMenuListener() {
             public void popupMenuCanceled(javax.swing.event.PopupMenuEvent evt) {
             }
@@ -102,19 +97,20 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 PerfilesActionPerformed(evt);
             }
         });
-        jPanel1.add(Perfiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 180, 30));
+        jPanel1.add(Perfiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 130, 30));
 
-        btn_inscripciones.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        btn_inscripciones.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         btn_inscripciones.setText("Inscripciones");
         btn_inscripciones.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_inscripciones.setPreferredSize(new java.awt.Dimension(120, 25));
         btn_inscripciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_inscripcionesActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_inscripciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, 170, 30));
+        jPanel1.add(btn_inscripciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, 130, 30));
 
-        btn_listados.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        btn_listados.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         btn_listados.setText("Listados");
         btn_listados.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_listados.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -127,11 +123,12 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 btn_listadosActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_listados, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, 130, 30));
+        jPanel1.add(btn_listados, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 130, 30));
 
-        btn_notificaciones.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        btn_notificaciones.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         btn_notificaciones.setText("Notificaciones");
         btn_notificaciones.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_notificaciones.setPreferredSize(new java.awt.Dimension(120, 25));
         btn_notificaciones.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_notificacionesMouseClicked(evt);
@@ -142,9 +139,9 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 btn_notificacionesActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_notificaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 170, 170, 30));
+        jPanel1.add(btn_notificaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 170, 130, 30));
 
-        btn_configuracion.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        btn_configuracion.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         btn_configuracion.setText("Configuracion");
         btn_configuracion.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_configuracion.addActionListener(new java.awt.event.ActionListener() {
@@ -152,11 +149,11 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 btn_configuracionActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_configuracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 170, 170, 30));
+        jPanel1.add(btn_configuracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 170, 130, 30));
 
-        NomAdmi.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        NomAdmi.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
         NomAdmi.setText("Nombres:");
-        jPanel1.add(NomAdmi, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, 100, 25));
+        jPanel1.add(NomAdmi, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, 100, 25));
 
         NomAdm.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         NomAdm.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
@@ -166,86 +163,86 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 NomAdmActionPerformed(evt);
             }
         });
-        jPanel1.add(NomAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 380, 20));
+        jPanel1.add(NomAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 350, 20));
 
-        ApelAdm.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        ApelAdm.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
         ApelAdm.setText("Apellidos:");
-        jPanel1.add(ApelAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 100, 25));
+        jPanel1.add(ApelAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 100, 25));
 
         apellidos.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         apellidos.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
         apellidos.setCaretColor(new java.awt.Color(153, 153, 153));
-        jPanel1.add(apellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 380, 20));
+        jPanel1.add(apellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 350, 20));
 
-        DocAdm.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        DocAdm.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
         DocAdm.setText("Documento:");
-        jPanel1.add(DocAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 120, 40));
+        jPanel1.add(DocAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 350, 120, 20));
 
         documentos.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         documentos.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
         documentos.setCaretColor(new java.awt.Color(153, 153, 153));
-        jPanel1.add(documentos, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 380, 20));
+        jPanel1.add(documentos, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, 350, 20));
 
-        CodPerAdm.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        CodPerAdm.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
         CodPerAdm.setText("Codigo:");
-        jPanel1.add(CodPerAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 90, 40));
+        jPanel1.add(CodPerAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, 90, 20));
 
         codigo.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         codigo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
         codigo.setCaretColor(new java.awt.Color(153, 153, 153));
-        jPanel1.add(codigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, 380, 20));
+        jPanel1.add(codigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 350, 20));
 
-        DirPerAdm.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        DirPerAdm.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
         DirPerAdm.setText("Direccion:");
-        jPanel1.add(DirPerAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, 80, 50));
+        jPanel1.add(DirPerAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, 80, 20));
 
         direccion.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         direccion.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
         direccion.setCaretColor(new java.awt.Color(153, 153, 153));
-        jPanel1.add(direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 380, 20));
+        jPanel1.add(direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 450, 350, 20));
 
-        TelPerAdm.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        TelPerAdm.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
         TelPerAdm.setText("Telefono:");
-        jPanel1.add(TelPerAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, 80, 60));
+        jPanel1.add(TelPerAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 500, 80, 20));
 
         telefono.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         telefono.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
         telefono.setCaretColor(new java.awt.Color(153, 153, 153));
-        jPanel1.add(telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 450, 380, 20));
+        jPanel1.add(telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 500, 350, 20));
 
-        RolPerAdm.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        RolPerAdm.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
         RolPerAdm.setText("Rol:");
-        jPanel1.add(RolPerAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 500, 70, 30));
+        jPanel1.add(RolPerAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 550, 70, 20));
 
         rol.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         rol.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
         rol.setCaretColor(new java.awt.Color(153, 153, 153));
-        jPanel1.add(rol, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 500, 380, 20));
+        jPanel1.add(rol, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 550, 350, 20));
 
-        FecPerAdm.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        FecPerAdm.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
         FecPerAdm.setText("Fecha de nacimiento:");
-        jPanel1.add(FecPerAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 160, 30));
-        jPanel1.add(jDateChooser1FecNacAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 550, 180, 30));
+        jPanel1.add(FecPerAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 610, 160, 30));
+        jPanel1.add(jDateChooser1FecNacAdm, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 610, 180, 30));
 
         FotoEstudi.setBackground(new java.awt.Color(255, 255, 255));
-        FotoEstudi.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        FotoEstudi.setForeground(new java.awt.Color(204, 204, 204));
+        FotoEstudi.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        FotoEstudi.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout FotoEstudiLayout = new javax.swing.GroupLayout(FotoEstudi);
         FotoEstudi.setLayout(FotoEstudiLayout);
         FotoEstudiLayout.setHorizontalGroup(
             FotoEstudiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 168, Short.MAX_VALUE)
+            .addGap(0, 228, Short.MAX_VALUE)
         );
         FotoEstudiLayout.setVerticalGroup(
             FotoEstudiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 218, Short.MAX_VALUE)
+            .addGap(0, 268, Short.MAX_VALUE)
         );
 
-        jPanel1.add(FotoEstudi, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 220, 170, 220));
+        jPanel1.add(FotoEstudi, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 260, 230, 270));
 
         BotSiguiPerAdm1.setBackground(new java.awt.Color(204, 204, 204));
-        BotSiguiPerAdm1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        BotSiguiPerAdm1.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         BotSiguiPerAdm1.setText("PERFIL COORDINADOR");
         BotSiguiPerAdm1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BotSiguiPerAdm1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -258,10 +255,10 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 BotSiguiPerAdm1ActionPerformed(evt);
             }
         });
-        jPanel1.add(BotSiguiPerAdm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 540, 260, 20));
+        jPanel1.add(BotSiguiPerAdm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 570, 240, 20));
 
         BotSiguiPerEst.setBackground(new java.awt.Color(204, 204, 204));
-        BotSiguiPerEst.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        BotSiguiPerEst.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         BotSiguiPerEst.setText("      PERFIL PROFESOR");
         BotSiguiPerEst.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BotSiguiPerEst.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -274,10 +271,10 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 BotSiguiPerEstActionPerformed(evt);
             }
         });
-        jPanel1.add(BotSiguiPerEst, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 570, 260, 20));
+        jPanel1.add(BotSiguiPerEst, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 600, 240, 20));
 
         BotSiguiPerAdm2.setBackground(new java.awt.Color(204, 204, 204));
-        BotSiguiPerAdm2.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        BotSiguiPerAdm2.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         BotSiguiPerAdm2.setText("   PERFIL ESTUDIANTE");
         BotSiguiPerAdm2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         BotSiguiPerAdm2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -290,49 +287,42 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 BotSiguiPerAdm2ActionPerformed(evt);
             }
         });
-        jPanel1.add(BotSiguiPerAdm2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 600, 260, 20));
+        jPanel1.add(BotSiguiPerAdm2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 630, 240, 20));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logoFNH2.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        logo2.setBackground(new java.awt.Color(153, 153, 153));
+        logo2.setFont(new java.awt.Font("Lucida Fax", 1, 18)); // NOI18N
+        logo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        logo2.setText("PERFIL ADMINISTRADOR");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addGap(36, 36, 36)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 423, Short.MAX_VALUE)
+                .addComponent(logo2, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(62, 62, 62))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jLabel1)
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(logo2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 130));
-
-        jPanel3.setBackground(new java.awt.Color(204, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 678, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 58, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 0, 680, 60));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 130));
 
         jScrollPane1.setViewportView(jPanel1);
 
@@ -340,7 +330,7 @@ public class PerfilAdministrador extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1115, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -363,10 +353,9 @@ public class PerfilAdministrador extends javax.swing.JFrame {
     }//GEN-LAST:event_PerfilesActionPerformed
 
     private void btn_inscripcionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_inscripcionesActionPerformed
-        this.dispose();
-        inscripciones abrir = new inscripciones();
-        abrir.setVisible(true);
-        this.setVisible(false);
+            
+        RegistroPersonas form= new RegistroPersonas();
+        form.setVisible(true);
     }//GEN-LAST:event_btn_inscripcionesActionPerformed
 
     private void btn_listadosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_listadosMouseClicked
@@ -466,7 +455,6 @@ public class PerfilAdministrador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel logo2;
     private javax.swing.JTextField rol;

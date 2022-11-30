@@ -17,8 +17,8 @@ public class Principal extends javax.swing.JFrame {
         initComponents();
         //this.setExtendedState(MAXIMIZED_BOTH);
         //setVisible(true);
-        //setLocationRelativeTo(null);
-        //setTitle("INICIO");
+        setLocationRelativeTo(null);
+        setTitle("INICIO");
     }
 
     /**
@@ -52,13 +52,13 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(340, 130, 400, 410);
+        jLabel1.setBounds(340, 140, 402, 400);
 
         jButton2.setText("jButton2");
         jPanel1.add(jButton2);
-        jButton2.setBounds(340, 130, 400, 410);
+        jButton2.setBounds(340, 140, 400, 400);
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1100, 700));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 700));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

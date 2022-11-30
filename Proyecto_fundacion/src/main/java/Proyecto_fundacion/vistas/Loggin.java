@@ -82,20 +82,20 @@ public class Loggin extends javax.swing.JFrame {
         });
         jPanel1.add(campo_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 360, 40));
 
-        txt_usuario.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_usuario.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         txt_usuario.setText("USUARIO:");
-        jPanel1.add(txt_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 210, 40));
+        jPanel1.add(txt_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 210, 40));
 
         campo_contrasena.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
         campo_contrasena.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jPanel1.add(campo_contrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 360, 40));
 
-        txt_contraseña.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txt_contraseña.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         txt_contraseña.setText("CONTRASEÑA:");
         jPanel1.add(txt_contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 180, 40));
 
         jButtonIngresar.setBackground(new java.awt.Color(204, 204, 204));
-        jButtonIngresar.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        jButtonIngresar.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
         jButtonIngresar.setText("INGRESAR");
         jButtonIngresar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButtonIngresar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -108,10 +108,10 @@ public class Loggin extends javax.swing.JFrame {
                 jButtonIngresarActionPerformed(evt);
             }
         });
-        jPanel1.add(jButtonIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 490, 150, 30));
+        jPanel1.add(jButtonIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 540, 150, 30));
 
         jButtonOlvidoContraseña.setBackground(new java.awt.Color(204, 204, 204));
-        jButtonOlvidoContraseña.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        jButtonOlvidoContraseña.setFont(new java.awt.Font("Lucida Fax", 2, 14)); // NOI18N
         jButtonOlvidoContraseña.setText("Olvido su Contraseña?");
         jButtonOlvidoContraseña.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButtonOlvidoContraseña.addActionListener(new java.awt.event.ActionListener() {
@@ -119,18 +119,19 @@ public class Loggin extends javax.swing.JFrame {
                 jButtonOlvidoContraseñaActionPerformed(evt);
             }
         });
-        jPanel1.add(jButtonOlvidoContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 550, 210, -1));
+        jPanel1.add(jButtonOlvidoContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 540, 210, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/USUARIO.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 230, 230));
 
+        Mostar_Contraseña.setBackground(new java.awt.Color(255, 255, 255));
         Mostar_Contraseña.setText("Mostrar Contraseña");
         Mostar_Contraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Mostar_ContraseñaActionPerformed(evt);
             }
         });
-        jPanel1.add(Mostar_Contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 160, -1));
+        jPanel1.add(Mostar_Contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 490, 160, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 700));
 
@@ -138,9 +139,9 @@ public class Loggin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonIngresarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonIngresarMouseClicked
-      this.dispose();
-      PerfilAdministrador ingresar = new PerfilAdministrador();
-      ingresar.setVisible(true);        // TODO add your handling code here:
+      //this.dispose();
+      //PerfilAdministrador ingresar = new PerfilAdministrador();
+      //ingresar.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButtonIngresarMouseClicked
 
     private void jButtonOlvidoContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOlvidoContraseñaActionPerformed

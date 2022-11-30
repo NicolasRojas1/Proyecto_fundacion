@@ -18,8 +18,11 @@ public class PersonaDAO {
     PreparedStatement ps = null; //se inicializa en nulo, es el que prepara la consulta
     ResultSet rs = null; //nula por que aun no se usa, es el que obtiene el resultado
     
-    public boolean Modify(Personas personas){
-        
+ public boolean Modify(Personas personas) throws SQLException{
+        int llave_foranea = 0;
+        Connection con = new Conexion().getConnection();
+        //= null; //se inicializa en nulo, es el que prepara la consulta
+        ResultSet rs = null; //nula por que aun no se usa, es el que obtiene el resultado
         String sql = "UPDATE  personas set "
                 + "PerTipodeDocumento = ?,"
                 + "PerNumerodeDocumento = ?,"
@@ -37,9 +40,10 @@ public class PersonaDAO {
                 + "PerEps = ?,"
                 + "PerSisben = ?,"
                 + "PerSisbenCategoria = ? "
-                + "WHERE PerTipodeDocumento = ?";        
+                + "WHERE PerId = ?";       
+        PreparedStatement ps = null;
         try {
-            
+            llave_foranea = Search_persona(personas.getPerNumerodeDocumento()); 
             ps = con.prepareStatement(sql);
             ps.setString(1, personas.getPerTipodeDocumento());
             ps.setString(2, personas.getPerNumerodeDocumento());
@@ -57,14 +61,16 @@ public class PersonaDAO {
             ps.setString(14, personas.getPerEps()); 
             ps.setBoolean(15, personas.isPerSisben());
             ps.setString(16, personas.getPerSisbenCategoria());
-            ps.setString(17, personas.getPerTipodeDocumento());
+            ps.setString(17, Integer.toString(llave_foranea));
             ps.executeUpdate();
             
-            //int llave_foranea = Search_persona(personas.getPerNumerodeDocumento());            
+                       
             return true; //Esta es la respuesta que se le envia al controlador
             
         } catch (SQLException ex) {
             
+            JOptionPane.showMessageDialog(null, Integer.toString(llave_foranea), "ERROR", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "si esta tomando el modificar", "ERROR", JOptionPane.ERROR_MESSAGE);
             JOptionPane.showMessageDialog(null, ex.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
             return false; //Esta es la respuesta que se le envia al controlador
         } finally {
@@ -79,6 +85,7 @@ public class PersonaDAO {
             }
         }   
     }
+ 
     public boolean Store(Personas personas){
         
         String sql = "INSERT INTO personas ("
