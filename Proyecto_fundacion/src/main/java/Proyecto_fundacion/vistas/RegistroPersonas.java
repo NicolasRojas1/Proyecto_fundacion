@@ -81,12 +81,13 @@ public class RegistroPersonas extends javax.swing.JFrame {
         Radio_sisben_si = new javax.swing.JRadioButton();
         Campo_estrato1 = new javax.swing.JTextField();
         Campo_categoria_sis1 = new javax.swing.JTextField();
-        txt_titulo = new javax.swing.JLabel();
         btn_guardar = new javax.swing.JButton();
         txt_ciudad_nacimiento = new javax.swing.JLabel();
         Campo_ciudad_nacimiento = new javax.swing.JTextField();
         jButton1Modificardatos = new javax.swing.JButton();
         Regresar_perfil = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        txt_titulo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("fondo");
@@ -147,11 +148,10 @@ public class RegistroPersonas extends javax.swing.JFrame {
             }
         });
 
-        txt_titulo.setFont(new java.awt.Font("Lucida Fax", 1, 18)); // NOI18N
-        txt_titulo.setForeground(new java.awt.Color(204, 51, 255));
-        txt_titulo.setText("FORMULARIO ESTUDIANTES");
-
-        btn_guardar.setText("GUARDAR");
+        btn_guardar.setBackground(new java.awt.Color(255, 255, 255));
+        btn_guardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/disco-flexible.png"))); // NOI18N
+        btn_guardar.setText("Guardar");
+        btn_guardar.setBorder(null);
         btn_guardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_guardarActionPerformed(evt);
@@ -160,7 +160,10 @@ public class RegistroPersonas extends javax.swing.JFrame {
 
         txt_ciudad_nacimiento.setText("Ciudad de Nacimiento:");
 
-        jButton1Modificardatos.setText("ACTUALIZAR");
+        jButton1Modificardatos.setBackground(new java.awt.Color(255, 255, 255));
+        jButton1Modificardatos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/boton-actualizar (1).png"))); // NOI18N
+        jButton1Modificardatos.setText("Actualizar");
+        jButton1Modificardatos.setBorder(null);
         jButton1Modificardatos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ModificardatosActionPerformed(evt);
@@ -175,17 +178,45 @@ public class RegistroPersonas extends javax.swing.JFrame {
             }
         });
 
+        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        txt_titulo.setBackground(new java.awt.Color(0, 0, 0));
+        txt_titulo.setFont(new java.awt.Font("Lucida Fax", 1, 18)); // NOI18N
+        txt_titulo.setText("FORMULARIO ESTUDIANTES");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(106, 106, 106)
+                .addComponent(txt_titulo)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(40, Short.MAX_VALUE)
+                .addComponent(txt_titulo)
+                .addGap(38, 38, 38))
+        );
+
         javax.swing.GroupLayout Panel_principalLayout = new javax.swing.GroupLayout(Panel_principal);
         Panel_principal.setLayout(Panel_principalLayout);
         Panel_principalLayout.setHorizontalGroup(
             Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(Panel_principalLayout.createSequentialGroup()
-                .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(62, 62, 62)
+                .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(Panel_principalLayout.createSequentialGroup()
-                        .addGap(114, 114, 114)
-                        .addComponent(txt_titulo))
+                        .addComponent(btn_guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton1Modificardatos, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24)
+                        .addComponent(Regresar_perfil, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(Panel_principalLayout.createSequentialGroup()
-                        .addGap(62, 62, 62)
                         .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(Date_fecha_naci, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -225,22 +256,13 @@ public class RegistroPersonas extends javax.swing.JFrame {
                             .addComponent(txt_apellidos)
                             .addComponent(Campo_apellidos1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_localidad))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(Panel_principalLayout.createSequentialGroup()
-                .addGap(70, 70, 70)
-                .addComponent(btn_guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(jButton1Modificardatos, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addComponent(Regresar_perfil, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
         Panel_principalLayout.setVerticalGroup(
             Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel_principalLayout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(txt_titulo)
-                .addGap(45, 45, 45)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23)
                 .addGroup(Panel_principalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(Panel_principalLayout.createSequentialGroup()
                         .addComponent(txt_tipo_documento)
@@ -324,7 +346,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
                     .addComponent(jButton1Modificardatos)
                     .addComponent(btn_guardar)
                     .addComponent(Regresar_perfil, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -501,6 +523,7 @@ public class RegistroPersonas extends javax.swing.JFrame {
     private javax.swing.JButton btn_guardar;
     private javax.swing.ButtonGroup grupo_btn_sisben;
     private javax.swing.JButton jButton1Modificardatos;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel txt_apellidos;
     private javax.swing.JLabel txt_barrio;
     private javax.swing.JLabel txt_categoria_sisben;
