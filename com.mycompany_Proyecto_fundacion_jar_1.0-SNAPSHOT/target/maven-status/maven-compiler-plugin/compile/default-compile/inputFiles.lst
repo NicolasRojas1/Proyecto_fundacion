@@ -13,7 +13,9 @@ C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fund
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\dao\LogginDAO.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\models\Usuarios.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\vistas\RegistroPersonas.java
+C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\models\Perfil_estudiante.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\models\Personas.java
+C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\vistas\RegistroPersona.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\models\Acudientes.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\controller\RegistrosController.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\controller\MadresController.java
@@ -23,10 +25,13 @@ C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fund
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\models\Familiares.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\vistas\Perfil_estudiante.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\vistas\Notificaciones.java
+C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\models\PerfilAdministrador.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\vistas\inscripciones.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\com\mycompany\proyecto_fundacion\Main.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\controller\OtrosController.java
+C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\vistas\AdministradorController.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\models\Viviendas.java
+C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\vistas\Date_fecha_naci.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\models\Principal.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\vistas\Loggin.java
 C:\Users\USUARIO\Documents\GitHub\Proyecto_fundacion\com.mycompany_Proyecto_fundacion_jar_1.0-SNAPSHOT\src\main\java\Proyecto_fundacion\models\Madres.java
