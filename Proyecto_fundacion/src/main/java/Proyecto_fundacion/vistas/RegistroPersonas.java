@@ -459,7 +459,11 @@ public class RegistroPersonas extends javax.swing.JFrame {
         
         
         boolean respuesta = false;
-        respuesta = registro.modificar(persona);
+        try {
+            respuesta = registro.modificar(persona);
+        } catch (SQLException ex) {
+            Logger.getLogger(RegistroPersonas.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
         if(respuesta) {
             

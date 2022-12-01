@@ -2,6 +2,7 @@ package Proyecto_fundacion.controller;
 
 import Proyecto_fundacion.dao.PersonaDAO;
 import Proyecto_fundacion.models.Personas;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -34,7 +35,7 @@ public class PersonasController {
         return respuesta;
     }
 
-    public boolean modificar(Personas persona) {
+    public boolean modificar(Personas persona) throws SQLException {
         
         //aqui recibo la respuesta del DAO si es true o false, no es la misma respuesta del view
         boolean respuesta = pdao.Modify(persona);
