@@ -75,6 +75,7 @@ public class PerfilAdministrador extends javax.swing.JFrame {
 
         Perfiles.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
         Perfiles.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Coordinador", "Estudiante", "Profesor" }));
+        Perfiles.setBorder(null);
         Perfiles.setPreferredSize(new java.awt.Dimension(120, 25));
         Perfiles.addPopupMenuListener(new javax.swing.event.PopupMenuListener() {
             public void popupMenuCanceled(javax.swing.event.PopupMenuEvent evt) {
@@ -99,20 +100,24 @@ public class PerfilAdministrador extends javax.swing.JFrame {
         });
         jPanel1.add(Perfiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 130, 30));
 
+        btn_inscripciones.setBackground(new java.awt.Color(255, 255, 255));
         btn_inscripciones.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
+        btn_inscripciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/inscripciones.png"))); // NOI18N
         btn_inscripciones.setText("Inscripciones");
-        btn_inscripciones.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_inscripciones.setBorder(null);
         btn_inscripciones.setPreferredSize(new java.awt.Dimension(120, 25));
         btn_inscripciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_inscripcionesActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_inscripciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 170, 130, 30));
+        jPanel1.add(btn_inscripciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 130, 30));
 
+        btn_listados.setBackground(new java.awt.Color(255, 255, 255));
         btn_listados.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
+        btn_listados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/listado.png"))); // NOI18N
         btn_listados.setText("Listados");
-        btn_listados.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_listados.setBorder(null);
         btn_listados.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_listadosMouseClicked(evt);
@@ -125,9 +130,11 @@ public class PerfilAdministrador extends javax.swing.JFrame {
         });
         jPanel1.add(btn_listados, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 130, 30));
 
+        btn_notificaciones.setBackground(new java.awt.Color(255, 255, 255));
         btn_notificaciones.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
+        btn_notificaciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/notificacion.png"))); // NOI18N
         btn_notificaciones.setText("Notificaciones");
-        btn_notificaciones.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_notificaciones.setBorder(null);
         btn_notificaciones.setPreferredSize(new java.awt.Dimension(120, 25));
         btn_notificaciones.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -139,11 +146,13 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 btn_notificacionesActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_notificaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 170, 130, 30));
+        jPanel1.add(btn_notificaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 170, 150, 30));
 
+        btn_configuracion.setBackground(new java.awt.Color(255, 255, 255));
         btn_configuracion.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
+        btn_configuracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ajuste.png"))); // NOI18N
         btn_configuracion.setText("Configuracion");
-        btn_configuracion.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btn_configuracion.setBorder(null);
         btn_configuracion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_configuracionActionPerformed(evt);
@@ -241,10 +250,11 @@ public class PerfilAdministrador extends javax.swing.JFrame {
 
         jPanel1.add(FotoEstudi, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 260, 230, 270));
 
-        BotSiguiPerAdm1.setBackground(new java.awt.Color(204, 204, 204));
+        BotSiguiPerAdm1.setBackground(new java.awt.Color(255, 255, 255));
         BotSiguiPerAdm1.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
+        BotSiguiPerAdm1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/flecha derecha.png"))); // NOI18N
         BotSiguiPerAdm1.setText("PERFIL COORDINADOR");
-        BotSiguiPerAdm1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BotSiguiPerAdm1.setBorder(null);
         BotSiguiPerAdm1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BotSiguiPerAdm1MouseClicked(evt);
@@ -255,12 +265,13 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 BotSiguiPerAdm1ActionPerformed(evt);
             }
         });
-        jPanel1.add(BotSiguiPerAdm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 570, 240, 20));
+        jPanel1.add(BotSiguiPerAdm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 560, 240, 30));
 
-        BotSiguiPerEst.setBackground(new java.awt.Color(204, 204, 204));
+        BotSiguiPerEst.setBackground(new java.awt.Color(255, 255, 255));
         BotSiguiPerEst.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
-        BotSiguiPerEst.setText("      PERFIL PROFESOR");
-        BotSiguiPerEst.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BotSiguiPerEst.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/flecha derecha.png"))); // NOI18N
+        BotSiguiPerEst.setText(" PERFIL PROFESOR");
+        BotSiguiPerEst.setBorder(null);
         BotSiguiPerEst.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BotSiguiPerEstMouseClicked(evt);
@@ -271,12 +282,14 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 BotSiguiPerEstActionPerformed(evt);
             }
         });
-        jPanel1.add(BotSiguiPerEst, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 600, 240, 20));
+        jPanel1.add(BotSiguiPerEst, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 600, 270, 30));
 
-        BotSiguiPerAdm2.setBackground(new java.awt.Color(204, 204, 204));
+        BotSiguiPerAdm2.setBackground(new java.awt.Color(255, 255, 255));
         BotSiguiPerAdm2.setFont(new java.awt.Font("Lucida Fax", 0, 14)); // NOI18N
-        BotSiguiPerAdm2.setText("   PERFIL ESTUDIANTE");
-        BotSiguiPerAdm2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BotSiguiPerAdm2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/flecha derecha.png"))); // NOI18N
+        BotSiguiPerAdm2.setText("PERFIL ESTUDIANTE");
+        BotSiguiPerAdm2.setActionCommand("PERFIL ESTUDIANTE");
+        BotSiguiPerAdm2.setBorder(null);
         BotSiguiPerAdm2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BotSiguiPerAdm2MouseClicked(evt);
@@ -287,14 +300,14 @@ public class PerfilAdministrador extends javax.swing.JFrame {
                 BotSiguiPerAdm2ActionPerformed(evt);
             }
         });
-        jPanel1.add(BotSiguiPerAdm2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 630, 240, 20));
+        jPanel1.add(BotSiguiPerAdm2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 640, 250, 30));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 255));
         jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logoFNH2.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
-        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         logo2.setBackground(new java.awt.Color(153, 153, 153));
         logo2.setFont(new java.awt.Font("Lucida Fax", 1, 18)); // NOI18N
@@ -306,8 +319,8 @@ public class PerfilAdministrador extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 423, Short.MAX_VALUE)
                 .addComponent(logo2, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62))
@@ -317,9 +330,9 @@ public class PerfilAdministrador extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(logo2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(24, Short.MAX_VALUE))
+                    .addComponent(logo2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 130));

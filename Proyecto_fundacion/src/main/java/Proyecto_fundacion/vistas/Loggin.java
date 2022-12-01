@@ -42,7 +42,7 @@ public class Loggin extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanelBordeImagen.setBackground(new java.awt.Color(204, 204, 255));
-        jPanelBordeImagen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jPanelBordeImagen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanelBordeImagen.setPreferredSize(new java.awt.Dimension(620, 700));
 
         jLabelImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo fundaciónNH_400x400.jpg"))); // NOI18N
@@ -54,7 +54,7 @@ public class Loggin extends javax.swing.JFrame {
         jPanelBordeImagenLayout.setHorizontalGroup(
             jPanelBordeImagenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelBordeImagenLayout.createSequentialGroup()
-                .addContainerGap(108, Short.MAX_VALUE)
+                .addContainerGap(110, Short.MAX_VALUE)
                 .addComponent(jLabelImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(106, 106, 106))
         );
@@ -63,7 +63,7 @@ public class Loggin extends javax.swing.JFrame {
             .addGroup(jPanelBordeImagenLayout.createSequentialGroup()
                 .addGap(121, 121, 121)
                 .addComponent(jLabelImagen)
-                .addContainerGap(173, Short.MAX_VALUE))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelBordeImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 620, 700));
@@ -94,10 +94,11 @@ public class Loggin extends javax.swing.JFrame {
         txt_contraseña.setText("CONTRASEÑA:");
         jPanel1.add(txt_contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 400, 180, 40));
 
-        jButtonIngresar.setBackground(new java.awt.Color(204, 204, 204));
+        jButtonIngresar.setBackground(new java.awt.Color(255, 255, 255));
         jButtonIngresar.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
+        jButtonIngresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ingresar.png"))); // NOI18N
         jButtonIngresar.setText("INGRESAR");
-        jButtonIngresar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButtonIngresar.setBorder(null);
         jButtonIngresar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButtonIngresarMouseClicked(evt);
@@ -110,10 +111,11 @@ public class Loggin extends javax.swing.JFrame {
         });
         jPanel1.add(jButtonIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 540, 150, 30));
 
-        jButtonOlvidoContraseña.setBackground(new java.awt.Color(204, 204, 204));
+        jButtonOlvidoContraseña.setBackground(new java.awt.Color(255, 255, 255));
         jButtonOlvidoContraseña.setFont(new java.awt.Font("Lucida Fax", 2, 14)); // NOI18N
+        jButtonOlvidoContraseña.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/pregunta.png"))); // NOI18N
         jButtonOlvidoContraseña.setText("Olvido su Contraseña?");
-        jButtonOlvidoContraseña.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButtonOlvidoContraseña.setBorder(null);
         jButtonOlvidoContraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonOlvidoContraseñaActionPerformed(evt);
@@ -121,8 +123,8 @@ public class Loggin extends javax.swing.JFrame {
         });
         jPanel1.add(jButtonOlvidoContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 540, 210, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/USUARIO.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 230, 230));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/perfil-del-usuario (1).png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 260, 230));
 
         Mostar_Contraseña.setBackground(new java.awt.Color(255, 255, 255));
         Mostar_Contraseña.setText("Mostrar Contraseña");

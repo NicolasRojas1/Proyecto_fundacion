@@ -42,39 +42,41 @@ public class CambioContrasena extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Usuario.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        Usuario.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         Usuario.setText("Usuario:");
-        jPanel1.add(Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, -1, -1));
+        jPanel1.add(Usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, -1, -1));
 
         Cusuario.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        jPanel1.add(Cusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 310, 30));
+        jPanel1.add(Cusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 310, 30));
 
-        ContraseñaNueva.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        ContraseñaNueva.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         ContraseñaNueva.setText("Contraseña nueva:");
-        jPanel1.add(ContraseñaNueva, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, -1, -1));
+        jPanel1.add(ContraseñaNueva, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, -1, -1));
 
         CContraNueva.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        jPanel1.add(CContraNueva, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 310, 30));
+        jPanel1.add(CContraNueva, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 310, 30));
 
-        ConfContras.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        ConfContras.setFont(new java.awt.Font("Lucida Fax", 1, 16)); // NOI18N
         ConfContras.setText("Confirmar contraseña:");
-        jPanel1.add(ConfContras, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 370, 220, -1));
+        jPanel1.add(ConfContras, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, 220, -1));
 
         CConfirContra.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        jPanel1.add(CConfirContra, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, 310, 30));
+        jPanel1.add(CConfirContra, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, 310, 30));
 
-        EnvioSolici.setBackground(new java.awt.Color(204, 204, 204));
-        EnvioSolici.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        EnvioSolici.setBackground(new java.awt.Color(255, 255, 255));
+        EnvioSolici.setFont(new java.awt.Font("Lucida Fax", 1, 14)); // NOI18N
+        EnvioSolici.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/boton-actualizar (1).png"))); // NOI18N
         EnvioSolici.setText("Enviar Solicitud");
-        EnvioSolici.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        EnvioSolici.setBorder(null);
         EnvioSolici.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EnvioSoliciMouseClicked(evt);
             }
         });
-        jPanel1.add(EnvioSolici, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 460, 160, 50));
+        jPanel1.add(EnvioSolici, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 470, 160, 50));
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jButton1.setText("ATRAS");
