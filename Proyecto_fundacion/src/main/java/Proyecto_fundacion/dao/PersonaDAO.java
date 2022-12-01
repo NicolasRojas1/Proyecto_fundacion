@@ -196,5 +196,36 @@ public class PersonaDAO {
         return listaPer;
 
         }
+    public Personas BuscarPersonas(String PerEdad) {
+
+        Personas per = new Personas();
+
+        String sql = "SELECT * FROM personas WHERE PerEdad=?";
+
+        try {
+            Connection conn = new Conexion().getConnection();
+            ps = con.prepareStatement(sql);
+            ps.setString(9,PerEdad);
+            rs = ps.executeQuery();
+
+            if (rs.next()) {
+
+               Personas Per = new Personas();
+                Per.setPerId(rs.getInt(1));
+                Per.setPerNombres(rs.getString(5));
+                Per.setPerApellidos(rs.getString(6));
+                Per.setPerTipodeDocumento(rs.getString(2));
+                Per.setPerNumerodeDocumento(rs.getString(3));
+                Per.setPerEdad(rs.getString(9));
+
+            }
+
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+        }
+        return per;
+
+    }
+
 
 }

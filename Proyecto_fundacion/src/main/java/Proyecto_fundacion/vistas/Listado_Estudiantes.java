@@ -3,7 +3,10 @@ package Proyecto_fundacion.vistas;
 
 import Proyecto_fundacion.dao.PersonaDAO;
 import Proyecto_fundacion.models.Personas;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.util.List;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 
@@ -128,6 +131,16 @@ private void ListarPersonas(){
 
         Busqueda_estudiante.setFont(new java.awt.Font("Roboto Light", 1, 18)); // NOI18N
         Busqueda_estudiante.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Busqueda_estudiante.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Busqueda_estudianteActionPerformed(evt);
+            }
+        });
+        Busqueda_estudiante.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                Busqueda_estudianteKeyTyped(evt);
+            }
+        });
         jPanel2.add(Busqueda_estudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 220, 310, 30));
 
         btn_buscar.setBackground(new java.awt.Color(204, 204, 204));
@@ -277,6 +290,25 @@ private void ListarPersonas(){
         abrir.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btn_irPerAdmActionPerformed
+
+    private void Busqueda_estudianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Busqueda_estudianteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Busqueda_estudianteActionPerformed
+
+    private void Busqueda_estudianteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Busqueda_estudianteKeyTyped
+         Busqueda_estudiante.addKeyListener(new KeyAdapter() {
+
+            @Override
+             public void keyReleased(KeyEvent ke) {
+
+                trs.setRowFilter(RowFilter.regexFilter(Busqueda_estudiante.getText(), 1));
+
+            }
+        });
+
+        trs = new TableRowSorter(modelo);
+        TablaListado.setRowSorter(trs);
+    }//GEN-LAST:event_Busqueda_estudianteKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
